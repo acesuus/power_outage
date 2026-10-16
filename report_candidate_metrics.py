@@ -17,8 +17,7 @@ from sklearn.metrics import (roc_auc_score, f1_score, precision_score, recall_sc
 
 RUN = ROOT / 'thesis_pipeline_recloser_suite/runs/recloser_suite_first'
 OUT = ROOT / 'reports/candidate_metrics'
-SPECS = [('Frozen expanding', 'frozen', 'all'), ('Monthly 12 months', 'monthly', '12m'),
-         ('Monthly 24 months', 'monthly', '24m'), ('Monthly expanding', 'monthly', 'all')]
+SPECS = [('Frozen expanding', 'frozen', 'all')]
 POLICIES = ['fpr20','fpr10','balanced_accuracy','f1','fixed050']
 
 def read(p):
@@ -49,37 +48,27 @@ def reliability(y, p, approach, mode):
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     data = {key: read(RUN / folder / 'predictions.csv') for key, folder in
-            [('frozen','07_frozen_evaluation'),('monthly','06_monthly_evaluation')]}
+            [('frozen','07_frozen_evaluation')]}
     scores = {key: read(RUN / folder / 'overall_metrics.csv') for key, folder in
-            [('frozen','07_frozen_evaluation'),('monthly','06_monthly_evaluation')]}
-    assert data['frozen'].row_id.equals(data['monthly'].row_id)
-    assert data['frozen'].outage_label.equals(data['monthly'].outage_label)
+            [('frozen','07_frozen_evaluation')]}
     assert len(data['frozen']) == 2098 and data['frozen'].outage_label.sum() == 57
-    source_paths = [RUN / folder / filename for folder in ['07_frozen_evaluation','06_monthly_evaluation']
+    source_paths = [RUN / folder / filename for folder in ['07_frozen_evaluation']
                     for filename in ['predictions.csv','overall_metrics.csv']]
     before = {str(p.relative_to(ROOT).as_posix()): digest(p) for p in source_paths}
     metrics, calibration, bin_tables = [], [], []
-    probabilities = {}
     for label, protocol, window in SPECS:
         pred = data[protocol]
         y = pred.outage_label.to_numpy(dtype=int)
         base = 'xgboost__history__'+window
         prior = np.zeros(len(pred))
-        if protocol == 'frozen':
-            path = RUN / '04_frozen_selection_fit/models' / base / 'calibration.csv'
-            prior[:] = read(path).outage_label.mean()
-            source_paths.append(path)
-        else:
-            for origin in pred.origin.unique():
-                path = RUN / '06_monthly_evaluation/models' / origin / base / 'prequential_calibration.csv'
-                prior[pred.origin.eq(origin)] = read(path).outage_label.mean()
-                source_paths.append(path)
+        path = RUN / '04_frozen_selection_fit/models' / base / 'calibration.csv'
+        prior[:] = read(path).outage_label.mean()
+        source_paths.append(path)
         prior_brier = brier_score_loss(y, prior)
-        for mode in ['raw', 'monotone_sigmoid' if protocol == 'frozen' else 'intercept_adjusted']:
+        for mode in ['raw', 'monotone_sigmoid']:
             model_id = base+'__'+mode
             p = pred[model_id+'_probability'].to_numpy()
             assert np.isfinite(p).all() and ((0 <= p) & (p <= 1)).all()
-            probabilities[label, mode] = p
             bins, ece = reliability(y, p, label, mode)
             bin_tables.append(bins)
             bs = float(brier_score_loss(y, p))
@@ -114,16 +103,16 @@ def main():
     calibration = pd.DataFrame(calibration)
     bins = pd.concat(bin_tables, ignore_index=True)
     primary = metrics[metrics['mode'].eq('raw') & metrics.policy.eq('fpr20')].copy()
-    assert primary[['tp','fp']].to_numpy().tolist() == [[44,1140],[13,623],[17,649],[2,175]]
+    assert primary[['tp','fp']].to_numpy().tolist() == [[44,1140]]
     metrics.to_csv(OUT/'all_warning_policies.csv',index=False)
     primary.to_csv(OUT/'primary_fpr20_results.csv',index=False)
     calibration.to_csv(OUT/'calibration_summary.csv',index=False)
     bins.to_csv(OUT/'reliability_bins.csv',index=False)
 
-    # Four panels preserve the low-probability range relevant to rare outages.
-    fig, axes = plt.subplots(2,2, figsize=(11,8), constrained_layout=True)
+    # Preserve the low-probability range relevant to rare outages.
+    fig, axis = plt.subplots(figsize=(7,5.5), constrained_layout=True)
     colors = ['#2166ac','#b35806']
-    for ax, (label,protocol,window) in zip(axes.flat,SPECS):
+    for ax, (label,protocol,window) in zip([axis],SPECS):
         c = calibration[calibration.approach.eq(label)]
         b = bins[bins.approach.eq(label)]
         maximum = max(float(b.mean_probability.max()),float(b.observed_rate.max()),.05)
@@ -139,11 +128,11 @@ def main():
         ax.yaxis.set_major_formatter(PercentFormatter(1))
         ax.grid(alpha=.2)
         ax.legend(fontsize=8,loc='upper left')
-    fig.suptitle('Reliability of archived recloser-day probabilities\n2,098 rows, 57 positives; up to 10 quantile bins per score mode',fontsize=13)
+    fig.suptitle('Frozen XGBoost/history probability calibration\n2,098 rows, 57 positives; up to 10 quantile bins per mode',fontsize=12)
     fig.savefig(OUT/'calibration_reliability.png',dpi=180)
     plt.close(fig)
 
-    lines = ['# Candidate evaluation in the requested thesis format','',
+    lines = ['# Frozen XGBoost/history evaluation','',
         'Same **2,098 recloser-days**, **57 positive rows** on 41 dates, January 1 to September 21, 2026. '
         'The table uses raw probabilities and the original earlier-learned **FPR20** warnings. '
         'No model, cutoff or prediction was changed.','',
@@ -159,14 +148,13 @@ def main():
         '|---|---:|---:|---:|---:|']
     for r in primary.itertuples():
         lines.append(f'| {r.approach} | {r.tp}/57 | {r.fp:,} | {r.fn} | {r.tn:,} |')
-    lines += ['', 'The monthly 12-month balanced-accuracy rule remains a separate operating point: '
-        '42/57 detected with 1,255 false warnings. All five warning policies and both probability '
+    lines += ['', 'All five warning policies and both probability '
         'modes are in [all_warning_policies.csv](all_warning_policies.csv). When no warnings are issued, '
         'the CSV uses the zero-division convention precision=0 and flags `precision_defined=False`.','',
         '## Calibration analysis','',
         'Observed outage frequency is **57/2,098 = 2.7169%**. Calibration asks whether predicted '
         'probabilities match observed frequencies; it is distinct from detecting outages at a cutoff. '
-        'The previously fitted frozen sigmoid and monthly intercept adjustments are compared with raw '
+        'The previously fitted frozen sigmoid calibration is compared with raw '
         'scores below. They are not refitted on these evaluation outcomes.','',
         '| Training approach | Probability mode | Mean probability | Observed rate | Brier score | ECE (10 quantile bins) |',
         '|---|---|---:|---:|---:|---:|']
@@ -182,8 +170,7 @@ def main():
         'dates/reclosers, bin frequencies can be noisy.','',
         'A small Brier score alone can be misleading when outages are rare. The always-zero '
         'probability reference scores **0.027169** here. A more informative reference predicts the '
-        'outage rate from each candidate\'s earlier calibration data, fixed for the frozen model and '
-        'updated only from earlier data for monthly models. No evaluation labels set those reference '
+        'outage rate from the frozen model\'s earlier calibration data. No evaluation labels set those reference '
         'probabilities. The following skill scores compare against that reference (positive is better):','',
         '| Training approach | Probability mode | Earlier-rate reference Brier | Brier skill |',
         '|---|---|---:|---:|']
@@ -191,28 +178,21 @@ def main():
         lines.append(f'| {r.approach} | {r.mode} | {r.earlier_calibration_rate_reference_brier:.6f} | {r.brier_skill_vs_earlier_calibration_rate:.2%} |')
     frozen_raw = calibration[(calibration.approach=='Frozen expanding') & (calibration['mode']=='raw')].iloc[0]
     frozen_cal = calibration[(calibration.approach=='Frozen expanding') & (calibration['mode']=='monotone_sigmoid')].iloc[0]
-    monthly_raw = calibration[(calibration.approach=='Monthly 12 months') & (calibration['mode']=='raw')].iloc[0]
-    monthly_cal = calibration[(calibration.approach=='Monthly 12 months') & (calibration['mode']=='intercept_adjusted')].iloc[0]
     lines += ['', '### Interpretation','',
         f'The frozen raw model averages {frozen_raw.mean_probability:.2%} predicted risk against '
         f'{frozen_raw.observed_rate:.2%} observed outages. Its earlier-fitted calibration reduces '
         f'that average to {frozen_cal.mean_probability:.2%}, and reduces Brier score from '
         f'{frozen_raw.brier_score:.6f} to {frozen_cal.brier_score:.6f}, but it still overpredicts on average.','',
-        f'The monthly 12-month adjustment brings the mean prediction close to the observed rate '
-        f'({monthly_cal.mean_probability:.2%}), yet worsens Brier score from '
-        f'{monthly_raw.brier_score:.6f} to {monthly_cal.brier_score:.6f} and increases binned calibration '
-        'error. Matching the overall outage frequency does not establish reliable probabilities '
-        'for individual risk groups. Across these candidates, Brier skill relative to the earlier-rate '
+        'Matching the overall outage frequency does not establish reliable probabilities '
+        'for individual risk groups. Brier skill relative to the earlier-rate '
         'reference is near zero or negative, so the small absolute Brier scores do not demonstrate '
         'a substantial probability-prediction improvement over that reference.','',
-        'For monthly candidates, AUC-ROC is pooled across all evaluation months. An '
-        'intercept adjustment preserves ranking within a month but can change pooled AUC by changing '
-        'ranking across months. The frozen monotone calibration preserves its overall ordering.','',
+        'The frozen monotone calibration preserves its overall ordering.','',
         'These reports use the existing retrospective evaluation population and do not select a new '
         'main model from the examined 2026 results. Low precision and the false-warning counts remain '
         'material to interpretation even where recall is high.','',
         '## Reproduce','', '`python report_candidate_metrics.py`','',
-        'The script independently recomputes all 40 candidate/mode/policy metric rows and compares '
+        'The script independently recomputes all 10 frozen mode/policy metric rows and compares '
         'them with archived scores. Input hashes and verification are in '
         '[verification.json](verification.json). Original data, models and archived reports remain unchanged.','']
     (OUT/'RESULTS.md').write_text('\n'.join(lines),encoding='utf-8',newline='\n')

@@ -68,8 +68,8 @@ their inputs requires a new separately documented experiment.
 ## Requested evaluation metrics and calibration
 
 `python report_candidate_metrics.py` independently recomputes AUC-ROC, F1-score,
-precision, recall and Brier score for all four history candidates, both saved
-probability modes and all five warning policies. It checks all 40 metric rows
+precision, recall and Brier score for the frozen history model, both saved
+probability modes and all five warning policies. It checks all 10 metric rows
 against the archived scores. It also produces reliability diagrams, quantile-bin
 calibration data, ECE and a Brier comparison against earlier calibration-rate
 probabilities. The report is `reports/candidate_metrics/RESULTS.md`. It does not
