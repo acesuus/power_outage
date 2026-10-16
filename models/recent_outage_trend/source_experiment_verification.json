@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "independent_metric_rows": 240,
+  "evaluation_rows": 2098,
+  "positive_rows": 57,
+  "negative_rows": 2041,
+  "positive_dates": 41,
+  "variants": 12,
+  "tracks": 2,
+  "source_hashes_and_stage_hashes_validated": true,
+  "development_choices_independently_verified": true,
+  "metric_formulas": "Mann-Whitney rank AUC; confusion-count precision, recall, F1; direct mean squared probability error"
+}
