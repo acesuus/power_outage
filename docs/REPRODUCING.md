@@ -64,3 +64,13 @@ The focused refit entrypoint reuses saved engineered features and cohorts. It
 does not redownload weather or regenerate textual interruption labels. Feature
 generation logic and weather-download code are included for inspection; changing
 their inputs requires a new separately documented experiment.
+
+## Requested evaluation metrics and calibration
+
+`python report_candidate_metrics.py` independently recomputes AUC-ROC, F1-score,
+precision, recall and Brier score for all four history candidates, both saved
+probability modes and all five warning policies. It checks all 40 metric rows
+against the archived scores. It also produces reliability diagrams, quantile-bin
+calibration data, ECE and a Brier comparison against earlier calibration-rate
+probabilities. The report is `reports/candidate_metrics/RESULTS.md`. It does not
+fit a new calibrator or change an existing warning rule using evaluation labels.

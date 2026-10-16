@@ -9,12 +9,18 @@ with **57 positive recloser-days**, not the later 2024 split experiment.
 Same 2,098 eligible recloser-days, including 57 recorded positive recloser-days
 on 41 dates, January 1 to September 21, 2026. Raw scores, earlier-learned FPR20 policy:
 
-| Training approach | Detected /57 | False warnings | Precision |
-|---|---:|---:|---:|
-| Frozen, expanding history | 44 | 1,140 | 3.7% |
-| Monthly, last 12 months | 13 | 623 | 2.0% |
-| Monthly, last 24 months | 17 | 649 | 2.6% |
-| Monthly, expanding history | 2 | 175 | 1.1% |
+| Training approach | AUC-ROC | F1-score | Precision | Recall | Brier score |
+|---|---:|---:|---:|---:|---:|
+| Frozen, expanding history | 0.6305 | 0.0709 | 3.72% | 77.19% | 0.026597 |
+| Monthly, last 12 months | 0.5715 | 0.0375 | 2.04% | 22.81% | 0.026495 |
+| Monthly, last 24 months | 0.5011 | 0.0470 | 2.55% | 29.82% | 0.026980 |
+| Monthly, expanding history | 0.5157 | 0.0171 | 1.13% | 3.51% | 0.026760 |
+
+**[Full metric report and calibration analysis](reports/candidate_metrics/RESULTS.md)**
+includes reliability diagrams, raw versus earlier-calibrated probabilities, Brier
+reference comparisons and all saved warning policies. Under FPR20 the four rows
+detect 44, 13, 17 and 2 of the 57 positive rows, with 1,140, 623, 649 and 175 false
+warnings, respectively. These counts remain part of the results.
 
 The monthly 12-month candidate with its earlier balanced-accuracy rule detects
 42/57 but produces 1,255 false warnings. FPR20 is learned on earlier calibration
@@ -45,6 +51,7 @@ model objects remain usable. Start with:
 | Final frozen history model and cutoffs | `thesis_pipeline_recloser_suite/runs/recloser_suite_first/04_frozen_selection_fit/models/xgboost__history__all/` |
 | Monthly fitted candidates | `thesis_pipeline_recloser_suite/runs/recloser_suite_first/06_monthly_evaluation/models/YYYY-MM-01/xgboost__history__{12m,24m,all}/` |
 | Focused comparison, monthly thresholds and counts | [Focused RESULTS.md](thesis_pipeline_recloser_suite/analysis/recloser_suite_first/monthly_xgboost_history/RESULTS.md) |
+| Requested metrics, calibration diagrams and Brier analysis | [Metric report](reports/candidate_metrics/RESULTS.md) |
 | Data guide and feature timing | [docs/DATA_AND_FEATURES.md](docs/DATA_AND_FEATURES.md) |
 | Reproduction steps | [docs/REPRODUCING.md](docs/REPRODUCING.md) |
 | CSV row counts and field lists | [docs/csv_catalog.json](docs/csv_catalog.json) |
@@ -65,6 +72,7 @@ python -m venv .venv
 # Activate the environment, then:
 python -m pip install -r requirements.txt
 python verify_package.py
+python report_candidate_metrics.py
 ```
 
 Verification checks exact source hashes, reloads all 77 models, reproduces saved
