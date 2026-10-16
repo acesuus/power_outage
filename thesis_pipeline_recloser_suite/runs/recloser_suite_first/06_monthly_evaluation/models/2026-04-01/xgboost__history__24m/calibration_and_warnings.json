@@ -1,0 +1,86 @@
+{
+  "calibrator": {
+    "method": "intercept-only logit adjustment",
+    "slope": 1,
+    "offset": -0.7028102237580027,
+    "rows": 596,
+    "positives": 9,
+    "fitted_on": "earlier monthly out-of-sample predictions"
+  },
+  "warnings": {
+    "raw": {
+      "balanced_accuracy": {
+        "threshold": 0.034376151859760284,
+        "policy": "balanced_accuracy",
+        "validation_objective": 0.6272004542873366,
+        "validation_recall": 0.6666666666666666,
+        "validation_fpr": 0.4122657580919932,
+        "fpr_limit": null
+      },
+      "fpr20": {
+        "threshold": 0.03504522517323494,
+        "policy": "fpr20",
+        "validation_objective": 0.2222222222222222,
+        "validation_recall": 0.2222222222222222,
+        "validation_fpr": 0.12947189097103917,
+        "fpr_limit": 0.2
+      },
+      "fpr10": {
+        "threshold": 1.000001,
+        "policy": "fpr10",
+        "validation_objective": 0.0,
+        "validation_recall": 0.0,
+        "validation_fpr": 0.0,
+        "fpr_limit": 0.1
+      },
+      "f1": {
+        "threshold": 0.034376151859760284,
+        "policy": "f1"
+      },
+      "fixed050": {
+        "threshold": 0.5,
+        "policy": "fixed050",
+        "fitted": false
+      }
+    },
+    "intercept_adjusted": {
+      "balanced_accuracy": {
+        "threshold": 0.017323406086056762,
+        "policy": "balanced_accuracy",
+        "validation_objective": 0.6272004542873366,
+        "validation_recall": 0.6666666666666666,
+        "validation_fpr": 0.4122657580919932,
+        "fpr_limit": null
+      },
+      "fpr20": {
+        "threshold": 0.017666649066429407,
+        "policy": "fpr20",
+        "validation_objective": 0.2222222222222222,
+        "validation_recall": 0.2222222222222222,
+        "validation_fpr": 0.12947189097103917,
+        "fpr_limit": 0.2
+      },
+      "fpr10": {
+        "threshold": 1.000001,
+        "policy": "fpr10",
+        "validation_objective": 0.0,
+        "validation_recall": 0.0,
+        "validation_fpr": 0.0,
+        "fpr_limit": 0.1
+      },
+      "f1": {
+        "threshold": 0.017323406086056762,
+        "policy": "f1"
+      },
+      "fixed050": {
+        "threshold": 0.5,
+        "policy": "fixed050",
+        "fitted": false
+      }
+    }
+  },
+  "asof": "2026-03-31T20:00:00+08:00",
+  "refit_end": "2026-03-17",
+  "calibration_end": "2026-03-17",
+  "max_prediction_origin": "2026-03-01"
+}

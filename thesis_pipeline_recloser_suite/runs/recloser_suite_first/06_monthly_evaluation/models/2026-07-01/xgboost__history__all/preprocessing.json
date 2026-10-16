@@ -1,0 +1,60 @@
+{
+  "family": "history",
+  "kind": "xgboost",
+  "fields": [
+    "recloser_id",
+    "day_of_week",
+    "day_of_year_sin",
+    "day_of_year_cos",
+    "outage_days_prev3d",
+    "outage_days_prev7d",
+    "days_since_last_outage_capped7",
+    "equipment_fault_days_prev7d",
+    "equipment_fault_days_prev14d"
+  ],
+  "medians": {
+    "day_of_year_sin": 0.025818440227133,
+    "day_of_year_cos": 0.1283983551465503,
+    "outage_days_prev3d": 0.0,
+    "outage_days_prev7d": 0.0,
+    "days_since_last_outage_capped7": 7.0,
+    "equipment_fault_days_prev7d": 0.0,
+    "equipment_fault_days_prev14d": 0.0
+  },
+  "categorical_fields": [
+    "recloser_id",
+    "day_of_week"
+  ],
+  "missing_indicators": [],
+  "dropped": [],
+  "encoded_names": [
+    "day_of_year_sin",
+    "day_of_year_cos",
+    "outage_days_prev3d",
+    "outage_days_prev7d",
+    "days_since_last_outage_capped7",
+    "equipment_fault_days_prev7d",
+    "equipment_fault_days_prev14d",
+    "recloser_id_BUNCAG",
+    "recloser_id_CHARIOT",
+    "recloser_id_FACTOR",
+    "recloser_id_KALIKASAN",
+    "recloser_id_LACSAMANA",
+    "recloser_id_MENDOZA",
+    "recloser_id_PENRO",
+    "recloser_id_PILTEL",
+    "recloser_id_SAN MANUEL",
+    "day_of_week_0",
+    "day_of_week_1",
+    "day_of_week_2",
+    "day_of_week_3",
+    "day_of_week_4",
+    "day_of_week_5",
+    "day_of_week_6"
+  ],
+  "p90": {},
+  "global_p90": {},
+  "scaler_mean": [],
+  "spline_knots": [],
+  "fitting_only": true
+}

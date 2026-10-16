@@ -1,0 +1,176 @@
+{
+  "complete": true,
+  "version": "3.0",
+  "rows": 87058,
+  "barangays": 58,
+  "start_date": "2022-08-31",
+  "end_date": "2026-10-09",
+  "timezone": "Asia/Manila",
+  "model_selection": "best_match",
+  "output_sha256": "831aedf00e848d69d89678609bde22d01739fe98911fc268e20ea84ff314aa0e",
+  "inputs_sha256": {
+    "weather_data\\barangay_coordinates.csv": "05c0280e91abb0f46b8be0888555bca3496c7595cb1bac4cf408732492c3b36d",
+    "weather_data\\barangay_daily_weather.csv": "1c6cfcc698235daaef589f9a692bd8b276cd8a899de30bb9e20ebfe8561be223"
+  },
+  "daily_features": [
+    "precipitation_hours",
+    "precipitation_hourly_max_mm"
+  ],
+  "hourly_source": "precipitation; reduced to one maximum per local day; no hourly predictor rows",
+  "frozen_rainfall_preserved": true,
+  "rows_with_daily_revision_over_0_1mm": 0,
+  "maximum_absolute_daily_revision_mm": 0.0,
+  "maximum_absolute_hourly_daily_difference_mm": 0.0,
+  "requests": [
+    {
+      "request_url": "https://archive-api.open-meteo.com/v1/archive?latitude=9.996764%2C9.897825%2C9.743069%2C9.730999%2C9.732797%2C10.024205%2C9.733081%2C10.07134%2C10.052455%2C10.158919&longitude=118.917846%2C118.665474%2C118.729705%2C118.747652%2C118.733391%2C118.736237%2C118.762329%2C119.062971%2C118.838209%2C118.866912&start_date=2022-08-31&end_date=2022-12-31&daily=precipitation_hours%2Cprecipitation_sum&hourly=precipitation&timezone=Asia%2FManila&precipitation_unit=mm&cell_selection=land",
+      "retrieved_at_utc": "2026-10-13T13:21:52.015971+00:00",
+      "response_sha256": "4c9a6cc4f643ee3fdfdf0dc03106665f0c0b625e90174d07d0a02ea1f5995498"
+    },
+    {
+      "request_url": "https://archive-api.open-meteo.com/v1/archive?latitude=10.0538%2C9.817813%2C9.762488%2C9.738844%2C10.132548%2C9.74054%2C10.006991%2C9.658074%2C9.738853%2C10.012067&longitude=119.016356%2C118.678254%2C118.660919%2C118.731858%2C119.088277%2C118.728627%2C118.876836%2C118.717584%2C118.730201%2C118.814862&start_date=2022-08-31&end_date=2022-12-31&daily=precipitation_hours%2Cprecipitation_sum&hourly=precipitation&timezone=Asia%2FManila&precipitation_unit=mm&cell_selection=land",
+      "retrieved_at_utc": "2026-10-13T13:21:58.476861+00:00",
+      "response_sha256": "a5fb3fa059aa3310509cc0b1bd28baef482d4238226ea72d4eee35b259494c88"
+    },
+    {
+      "request_url": "https://archive-api.open-meteo.com/v1/archive?latitude=9.73929%2C9.741268%2C9.968274%2C9.749804%2C9.73972%2C9.671641%2C9.739844%2C10.043515%2C9.986945%2C9.73679&longitude=118.733783%2C118.732158%2C118.821324%2C118.741114%2C118.738915%2C118.743425%2C118.741332%2C118.89261%2C118.851115%2C118.731717&start_date=2022-08-31&end_date=2022-12-31&daily=precipitation_hours%2Cprecipitation_sum&hourly=precipitation&timezone=Asia%2FManila&precipitation_unit=mm&cell_selection=land",
+      "retrieved_at_utc": "2026-10-13T13:22:05.209226+00:00",
+      "response_sha256": "c76b336571dcb06355b6c1484fe288f4aae2a1dae1a1c4c102b865ed4019c489"
+    },
+    {
+      "request_url": "https://archive-api.open-meteo.com/v1/archive?latitude=9.739006%2C9.733918%2C9.744606%2C9.741494%2C9.733564%2C9.736015%2C9.740049%2C9.703897%2C9.667711%2C9.73688&longitude=118.735547%2C118.735743%2C118.738211%2C118.730299%2C118.739312%2C118.748558%2C118.737036%2C118.607203%2C118.494943%2C118.730775&start_date=2022-08-31&end_date=2022-12-31&daily=precipitation_hours%2Cprecipitation_sum&hourly=precipitation&timezone=Asia%2FManila&precipitation_unit=mm&cell_selection=land",
+      "retrieved_at_utc": "2026-10-13T13:22:12.042148+00:00",
+      "response_sha256": "7ae630aaa6048c476156285489a8bd84daa58c3c86188a44c4f1ecf99a7540b6"
+    },
+    {
+      "request_url": "https://archive-api.open-meteo.com/v1/archive?latitude=9.736166%2C9.961874%2C9.795886%2C9.775119%2C9.746184%2C9.75897%2C10.053783%2C9.957091%2C9.853143%2C9.675847&longitude=118.73329%2C118.776382%2C118.756929%2C118.761457%2C118.757195%2C118.754034%2C118.942908%2C118.736087%2C118.720282%2C118.67948&start_date=2022-08-31&end_date=2022-12-31&daily=precipitation_hours%2Cprecipitation_sum&hourly=precipitation&timezone=Asia%2FManila&precipitation_unit=mm&cell_selection=land",
+      "retrieved_at_utc": "2026-10-13T13:22:18.776720+00:00",
+      "response_sha256": "d1ded9c4a712985f1b05e9262fe99dc1abb4a4e8103ef80a5e855e8db912636f"
+    },
+    {
+      "request_url": "https://archive-api.open-meteo.com/v1/archive?latitude=9.797883%2C9.743403%2C9.798502%2C9.819938%2C9.742036%2C10.058369%2C9.736992%2C9.774836&longitude=118.732625%2C118.733208%2C118.714234%2C118.745288%2C118.734915%2C118.982188%2C118.742853%2C118.736884&start_date=2022-08-31&end_date=2022-12-31&daily=precipitation_hours%2Cprecipitation_sum&hourly=precipitation&timezone=Asia%2FManila&precipitation_unit=mm&cell_selection=land",
+      "retrieved_at_utc": "2026-10-13T13:22:24.772346+00:00",
+      "response_sha256": "c03916004212c9a45d90ba30f6db8f82f30d03083b6b836dac5c3a8094c6bc5e"
+    },
+    {
+      "request_url": "https://archive-api.open-meteo.com/v1/archive?latitude=9.996764%2C9.897825%2C9.743069%2C9.730999%2C9.732797%2C10.024205%2C9.733081%2C10.07134%2C10.052455%2C10.158919&longitude=118.917846%2C118.665474%2C118.729705%2C118.747652%2C118.733391%2C118.736237%2C118.762329%2C119.062971%2C118.838209%2C118.866912&start_date=2023-01-01&end_date=2023-12-31&daily=precipitation_hours%2Cprecipitation_sum&hourly=precipitation&timezone=Asia%2FManila&precipitation_unit=mm&cell_selection=land",
+      "retrieved_at_utc": "2026-10-13T13:22:37.681819+00:00",
+      "response_sha256": "d4a706104aec4efed552f6eecaff3eefa3cd273ce8c8c60d8a243de7950fe7cf"
+    },
+    {
+      "request_url": "https://archive-api.open-meteo.com/v1/archive?latitude=10.0538%2C9.817813%2C9.762488%2C9.738844%2C10.132548%2C9.74054%2C10.006991%2C9.658074%2C9.738853%2C10.012067&longitude=119.016356%2C118.678254%2C118.660919%2C118.731858%2C119.088277%2C118.728627%2C118.876836%2C118.717584%2C118.730201%2C118.814862&start_date=2023-01-01&end_date=2023-12-31&daily=precipitation_hours%2Cprecipitation_sum&hourly=precipitation&timezone=Asia%2FManila&precipitation_unit=mm&cell_selection=land",
+      "retrieved_at_utc": "2026-10-13T13:22:50.793074+00:00",
+      "response_sha256": "ebbe25ccd6488ad2338708d0303df0b47ef810b503cf2eb69cab95e40d071f92"
+    },
+    {
+      "request_url": "https://archive-api.open-meteo.com/v1/archive?latitude=9.73929%2C9.741268%2C9.968274%2C9.749804%2C9.73972%2C9.671641%2C9.739844%2C10.043515%2C9.986945%2C9.73679&longitude=118.733783%2C118.732158%2C118.821324%2C118.741114%2C118.738915%2C118.743425%2C118.741332%2C118.89261%2C118.851115%2C118.731717&start_date=2023-01-01&end_date=2023-12-31&daily=precipitation_hours%2Cprecipitation_sum&hourly=precipitation&timezone=Asia%2FManila&precipitation_unit=mm&cell_selection=land",
+      "retrieved_at_utc": "2026-10-13T13:23:04.288859+00:00",
+      "response_sha256": "b4895f0a6cba868ce959b8b9756dbe2d389386b50ad054b1cb4afdc42b95a2f5"
+    },
+    {
+      "request_url": "https://archive-api.open-meteo.com/v1/archive?latitude=9.739006%2C9.733918%2C9.744606%2C9.741494%2C9.733564%2C9.736015%2C9.740049%2C9.703897%2C9.667711%2C9.73688&longitude=118.735547%2C118.735743%2C118.738211%2C118.730299%2C118.739312%2C118.748558%2C118.737036%2C118.607203%2C118.494943%2C118.730775&start_date=2023-01-01&end_date=2023-12-31&daily=precipitation_hours%2Cprecipitation_sum&hourly=precipitation&timezone=Asia%2FManila&precipitation_unit=mm&cell_selection=land",
+      "retrieved_at_utc": "2026-10-13T13:23:17.448585+00:00",
+      "response_sha256": "e65d39d98177f55b9bdd65330c9767d64489b16d3423eea442b2c1d7eba26104"
+    },
+    {
+      "request_url": "https://archive-api.open-meteo.com/v1/archive?latitude=9.736166%2C9.961874%2C9.795886%2C9.775119%2C9.746184%2C9.75897%2C10.053783%2C9.957091%2C9.853143%2C9.675847&longitude=118.73329%2C118.776382%2C118.756929%2C118.761457%2C118.757195%2C118.754034%2C118.942908%2C118.736087%2C118.720282%2C118.67948&start_date=2023-01-01&end_date=2023-12-31&daily=precipitation_hours%2Cprecipitation_sum&hourly=precipitation&timezone=Asia%2FManila&precipitation_unit=mm&cell_selection=land",
+      "retrieved_at_utc": "2026-10-13T13:23:30.264884+00:00",
+      "response_sha256": "dd6ed55a624cc363bae86ad83aeb647e0af0b7778df879e85230578f9401de90"
+    },
+    {
+      "request_url": "https://archive-api.open-meteo.com/v1/archive?latitude=9.797883%2C9.743403%2C9.798502%2C9.819938%2C9.742036%2C10.058369%2C9.736992%2C9.774836&longitude=118.732625%2C118.733208%2C118.714234%2C118.745288%2C118.734915%2C118.982188%2C118.742853%2C118.736884&start_date=2023-01-01&end_date=2023-12-31&daily=precipitation_hours%2Cprecipitation_sum&hourly=precipitation&timezone=Asia%2FManila&precipitation_unit=mm&cell_selection=land",
+      "retrieved_at_utc": "2026-10-13T13:23:41.344602+00:00",
+      "response_sha256": "4b444f9154f58e83e30e76f043d43daf4e9c35e4d1f7a5cc4695e6ca78878786"
+    },
+    {
+      "request_url": "https://archive-api.open-meteo.com/v1/archive?latitude=9.996764%2C9.897825%2C9.743069%2C9.730999%2C9.732797%2C10.024205%2C9.733081%2C10.07134%2C10.052455%2C10.158919&longitude=118.917846%2C118.665474%2C118.729705%2C118.747652%2C118.733391%2C118.736237%2C118.762329%2C119.062971%2C118.838209%2C118.866912&start_date=2024-01-01&end_date=2024-12-31&daily=precipitation_hours%2Cprecipitation_sum&hourly=precipitation&timezone=Asia%2FManila&precipitation_unit=mm&cell_selection=land",
+      "retrieved_at_utc": "2026-10-13T13:23:54.197886+00:00",
+      "response_sha256": "f901b132486b274a067bf5d487a7ed60c96403a87cf94e9a5d5471d101d0768f"
+    },
+    {
+      "request_url": "https://archive-api.open-meteo.com/v1/archive?latitude=10.0538%2C9.817813%2C9.762488%2C9.738844%2C10.132548%2C9.74054%2C10.006991%2C9.658074%2C9.738853%2C10.012067&longitude=119.016356%2C118.678254%2C118.660919%2C118.731858%2C119.088277%2C118.728627%2C118.876836%2C118.717584%2C118.730201%2C118.814862&start_date=2024-01-01&end_date=2024-12-31&daily=precipitation_hours%2Cprecipitation_sum&hourly=precipitation&timezone=Asia%2FManila&precipitation_unit=mm&cell_selection=land",
+      "retrieved_at_utc": "2026-10-13T13:24:07.038800+00:00",
+      "response_sha256": "79d1100473f2c93cea4be80117fb12bf822f96ee10d783ef2f1bb192fa1a82ff"
+    },
+    {
+      "request_url": "https://archive-api.open-meteo.com/v1/archive?latitude=9.73929%2C9.741268%2C9.968274%2C9.749804%2C9.73972%2C9.671641%2C9.739844%2C10.043515%2C9.986945%2C9.73679&longitude=118.733783%2C118.732158%2C118.821324%2C118.741114%2C118.738915%2C118.743425%2C118.741332%2C118.89261%2C118.851115%2C118.731717&start_date=2024-01-01&end_date=2024-12-31&daily=precipitation_hours%2Cprecipitation_sum&hourly=precipitation&timezone=Asia%2FManila&precipitation_unit=mm&cell_selection=land",
+      "retrieved_at_utc": "2026-10-13T13:24:19.867551+00:00",
+      "response_sha256": "9814c387c6d38679f6ee50a02ccdb37c9883cdaf815922565ce3b89f321fa18e"
+    },
+    {
+      "request_url": "https://archive-api.open-meteo.com/v1/archive?latitude=9.739006%2C9.733918%2C9.744606%2C9.741494%2C9.733564%2C9.736015%2C9.740049%2C9.703897%2C9.667711%2C9.73688&longitude=118.735547%2C118.735743%2C118.738211%2C118.730299%2C118.739312%2C118.748558%2C118.737036%2C118.607203%2C118.494943%2C118.730775&start_date=2024-01-01&end_date=2024-12-31&daily=precipitation_hours%2Cprecipitation_sum&hourly=precipitation&timezone=Asia%2FManila&precipitation_unit=mm&cell_selection=land",
+      "retrieved_at_utc": "2026-10-13T13:24:32.906515+00:00",
+      "response_sha256": "bc15c8d3fc61ae8f4b0277109e75c8d873b2683b2fb154397ff097d2e3a3a566"
+    },
+    {
+      "request_url": "https://archive-api.open-meteo.com/v1/archive?latitude=9.736166%2C9.961874%2C9.795886%2C9.775119%2C9.746184%2C9.75897%2C10.053783%2C9.957091%2C9.853143%2C9.675847&longitude=118.73329%2C118.776382%2C118.756929%2C118.761457%2C118.757195%2C118.754034%2C118.942908%2C118.736087%2C118.720282%2C118.67948&start_date=2024-01-01&end_date=2024-12-31&daily=precipitation_hours%2Cprecipitation_sum&hourly=precipitation&timezone=Asia%2FManila&precipitation_unit=mm&cell_selection=land",
+      "retrieved_at_utc": "2026-10-13T13:24:45.967057+00:00",
+      "response_sha256": "3a78c972c40fd2c7a230686dd028bc8dc93c5d4ab0c170b8eac17162a9054bf2"
+    },
+    {
+      "request_url": "https://archive-api.open-meteo.com/v1/archive?latitude=9.797883%2C9.743403%2C9.798502%2C9.819938%2C9.742036%2C10.058369%2C9.736992%2C9.774836&longitude=118.732625%2C118.733208%2C118.714234%2C118.745288%2C118.734915%2C118.982188%2C118.742853%2C118.736884&start_date=2024-01-01&end_date=2024-12-31&daily=precipitation_hours%2Cprecipitation_sum&hourly=precipitation&timezone=Asia%2FManila&precipitation_unit=mm&cell_selection=land",
+      "retrieved_at_utc": "2026-10-13T13:24:56.937052+00:00",
+      "response_sha256": "a76868db1d7d1eccfd606c7ed702d263ac20dee56199c1e5f761c673d98370cd"
+    },
+    {
+      "request_url": "https://archive-api.open-meteo.com/v1/archive?latitude=9.996764%2C9.897825%2C9.743069%2C9.730999%2C9.732797%2C10.024205%2C9.733081%2C10.07134%2C10.052455%2C10.158919&longitude=118.917846%2C118.665474%2C118.729705%2C118.747652%2C118.733391%2C118.736237%2C118.762329%2C119.062971%2C118.838209%2C118.866912&start_date=2025-01-01&end_date=2025-12-31&daily=precipitation_hours%2Cprecipitation_sum&hourly=precipitation&timezone=Asia%2FManila&precipitation_unit=mm&cell_selection=land",
+      "retrieved_at_utc": "2026-10-13T13:25:09.643482+00:00",
+      "response_sha256": "f293cff4fec3a73e7611ef8248693a2e03d823b187c74efbf8ead54151bd83aa"
+    },
+    {
+      "request_url": "https://archive-api.open-meteo.com/v1/archive?latitude=10.0538%2C9.817813%2C9.762488%2C9.738844%2C10.132548%2C9.74054%2C10.006991%2C9.658074%2C9.738853%2C10.012067&longitude=119.016356%2C118.678254%2C118.660919%2C118.731858%2C119.088277%2C118.728627%2C118.876836%2C118.717584%2C118.730201%2C118.814862&start_date=2025-01-01&end_date=2025-12-31&daily=precipitation_hours%2Cprecipitation_sum&hourly=precipitation&timezone=Asia%2FManila&precipitation_unit=mm&cell_selection=land",
+      "retrieved_at_utc": "2026-10-13T13:25:22.620637+00:00",
+      "response_sha256": "8c56b24fcd50e60a8bf1ad82faa524ffb13432369ef4afd477465be5512f3566"
+    },
+    {
+      "request_url": "https://archive-api.open-meteo.com/v1/archive?latitude=9.73929%2C9.741268%2C9.968274%2C9.749804%2C9.73972%2C9.671641%2C9.739844%2C10.043515%2C9.986945%2C9.73679&longitude=118.733783%2C118.732158%2C118.821324%2C118.741114%2C118.738915%2C118.743425%2C118.741332%2C118.89261%2C118.851115%2C118.731717&start_date=2025-01-01&end_date=2025-12-31&daily=precipitation_hours%2Cprecipitation_sum&hourly=precipitation&timezone=Asia%2FManila&precipitation_unit=mm&cell_selection=land",
+      "retrieved_at_utc": "2026-10-13T13:25:35.514303+00:00",
+      "response_sha256": "3bad82e1933b2ff5614548716224804de28eecb60f7f36afa9f9c20fdb9e7976"
+    },
+    {
+      "request_url": "https://archive-api.open-meteo.com/v1/archive?latitude=9.739006%2C9.733918%2C9.744606%2C9.741494%2C9.733564%2C9.736015%2C9.740049%2C9.703897%2C9.667711%2C9.73688&longitude=118.735547%2C118.735743%2C118.738211%2C118.730299%2C118.739312%2C118.748558%2C118.737036%2C118.607203%2C118.494943%2C118.730775&start_date=2025-01-01&end_date=2025-12-31&daily=precipitation_hours%2Cprecipitation_sum&hourly=precipitation&timezone=Asia%2FManila&precipitation_unit=mm&cell_selection=land",
+      "retrieved_at_utc": "2026-10-13T13:25:48.497271+00:00",
+      "response_sha256": "19b763d95ca1db64aa3cae9a43fae55be73fe9e80ad0579fbe2b5a1593e7e336"
+    },
+    {
+      "request_url": "https://archive-api.open-meteo.com/v1/archive?latitude=9.736166%2C9.961874%2C9.795886%2C9.775119%2C9.746184%2C9.75897%2C10.053783%2C9.957091%2C9.853143%2C9.675847&longitude=118.73329%2C118.776382%2C118.756929%2C118.761457%2C118.757195%2C118.754034%2C118.942908%2C118.736087%2C118.720282%2C118.67948&start_date=2025-01-01&end_date=2025-12-31&daily=precipitation_hours%2Cprecipitation_sum&hourly=precipitation&timezone=Asia%2FManila&precipitation_unit=mm&cell_selection=land",
+      "retrieved_at_utc": "2026-10-13T13:26:01.265146+00:00",
+      "response_sha256": "46ca55eee980305a21bac53a655f742cf1ea77a7d9c9e29307561e01b3757dd2"
+    },
+    {
+      "request_url": "https://archive-api.open-meteo.com/v1/archive?latitude=9.797883%2C9.743403%2C9.798502%2C9.819938%2C9.742036%2C10.058369%2C9.736992%2C9.774836&longitude=118.732625%2C118.733208%2C118.714234%2C118.745288%2C118.734915%2C118.982188%2C118.742853%2C118.736884&start_date=2025-01-01&end_date=2025-12-31&daily=precipitation_hours%2Cprecipitation_sum&hourly=precipitation&timezone=Asia%2FManila&precipitation_unit=mm&cell_selection=land",
+      "retrieved_at_utc": "2026-10-13T13:26:12.370796+00:00",
+      "response_sha256": "6c78d8142a7ea8fb4a0d0fc8c1598a7736b8bf0a787babd633dec90861da25f8"
+    },
+    {
+      "request_url": "https://archive-api.open-meteo.com/v1/archive?latitude=9.996764%2C9.897825%2C9.743069%2C9.730999%2C9.732797%2C10.024205%2C9.733081%2C10.07134%2C10.052455%2C10.158919&longitude=118.917846%2C118.665474%2C118.729705%2C118.747652%2C118.733391%2C118.736237%2C118.762329%2C119.062971%2C118.838209%2C118.866912&start_date=2026-01-01&end_date=2026-10-09&daily=precipitation_hours%2Cprecipitation_sum&hourly=precipitation&timezone=Asia%2FManila&precipitation_unit=mm&cell_selection=land",
+      "retrieved_at_utc": "2026-10-13T13:26:25.199449+00:00",
+      "response_sha256": "b36377daf39c5deaad1cfe74bc2120f709824cea83f40b9fdba0c28a91ce33ef"
+    },
+    {
+      "request_url": "https://archive-api.open-meteo.com/v1/archive?latitude=10.0538%2C9.817813%2C9.762488%2C9.738844%2C10.132548%2C9.74054%2C10.006991%2C9.658074%2C9.738853%2C10.012067&longitude=119.016356%2C118.678254%2C118.660919%2C118.731858%2C119.088277%2C118.728627%2C118.876836%2C118.717584%2C118.730201%2C118.814862&start_date=2026-01-01&end_date=2026-10-09&daily=precipitation_hours%2Cprecipitation_sum&hourly=precipitation&timezone=Asia%2FManila&precipitation_unit=mm&cell_selection=land",
+      "retrieved_at_utc": "2026-10-13T13:26:36.014089+00:00",
+      "response_sha256": "5f63186c738b93c7835a91686b3ebfb9ae85175021561a449a99cf20f004c25e"
+    },
+    {
+      "request_url": "https://archive-api.open-meteo.com/v1/archive?latitude=9.73929%2C9.741268%2C9.968274%2C9.749804%2C9.73972%2C9.671641%2C9.739844%2C10.043515%2C9.986945%2C9.73679&longitude=118.733783%2C118.732158%2C118.821324%2C118.741114%2C118.738915%2C118.743425%2C118.741332%2C118.89261%2C118.851115%2C118.731717&start_date=2026-01-01&end_date=2026-10-09&daily=precipitation_hours%2Cprecipitation_sum&hourly=precipitation&timezone=Asia%2FManila&precipitation_unit=mm&cell_selection=land",
+      "retrieved_at_utc": "2026-10-13T13:26:46.678254+00:00",
+      "response_sha256": "eda777a5fe341835f3f9ec4c9573c99387571b73e4f75aa4e06aae492ea35f3b"
+    },
+    {
+      "request_url": "https://archive-api.open-meteo.com/v1/archive?latitude=9.739006%2C9.733918%2C9.744606%2C9.741494%2C9.733564%2C9.736015%2C9.740049%2C9.703897%2C9.667711%2C9.73688&longitude=118.735547%2C118.735743%2C118.738211%2C118.730299%2C118.739312%2C118.748558%2C118.737036%2C118.607203%2C118.494943%2C118.730775&start_date=2026-01-01&end_date=2026-10-09&daily=precipitation_hours%2Cprecipitation_sum&hourly=precipitation&timezone=Asia%2FManila&precipitation_unit=mm&cell_selection=land",
+      "retrieved_at_utc": "2026-10-13T13:26:57.360558+00:00",
+      "response_sha256": "5af514192e505a2ac49fe7d428c7853f1d167d231cf393dbe63879c36c08731c"
+    },
+    {
+      "request_url": "https://archive-api.open-meteo.com/v1/archive?latitude=9.736166%2C9.961874%2C9.795886%2C9.775119%2C9.746184%2C9.75897%2C10.053783%2C9.957091%2C9.853143%2C9.675847&longitude=118.73329%2C118.776382%2C118.756929%2C118.761457%2C118.757195%2C118.754034%2C118.942908%2C118.736087%2C118.720282%2C118.67948&start_date=2026-01-01&end_date=2026-10-09&daily=precipitation_hours%2Cprecipitation_sum&hourly=precipitation&timezone=Asia%2FManila&precipitation_unit=mm&cell_selection=land",
+      "retrieved_at_utc": "2026-10-13T13:27:08.036755+00:00",
+      "response_sha256": "6f0d8181d9d7f029d82d3b4025581b9ac00e92b11f3f2a14740890bdcb0584fe"
+    },
+    {
+      "request_url": "https://archive-api.open-meteo.com/v1/archive?latitude=9.797883%2C9.743403%2C9.798502%2C9.819938%2C9.742036%2C10.058369%2C9.736992%2C9.774836&longitude=118.732625%2C118.733208%2C118.714234%2C118.745288%2C118.734915%2C118.982188%2C118.742853%2C118.736884&start_date=2026-01-01&end_date=2026-10-09&daily=precipitation_hours%2Cprecipitation_sum&hourly=precipitation&timezone=Asia%2FManila&precipitation_unit=mm&cell_selection=land",
+      "retrieved_at_utc": "2026-10-13T13:27:17.358744+00:00",
+      "response_sha256": "ca4151da1587bf63f975d2eba70cd2b6d8652b4fe788ff6dc2309a50da5eebf3"
+    }
+  ]
+}

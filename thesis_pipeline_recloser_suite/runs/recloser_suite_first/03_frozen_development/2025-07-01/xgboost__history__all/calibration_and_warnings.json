@@ -1,0 +1,82 @@
+{
+  "calibrator": {
+    "method": "nondecreasing logit-sigmoid",
+    "slope": 1.6941071636658973,
+    "intercept": 1.1890261292242947,
+    "slope_penalty_towards_identity": 0.001,
+    "rank_reversal_allowed": false,
+    "constant_if_zero_slope": false
+  },
+  "warnings": {
+    "raw": {
+      "balanced_accuracy": {
+        "threshold": 0.06306235492229462,
+        "policy": "balanced_accuracy",
+        "validation_objective": 0.6866968506558359,
+        "validation_recall": 0.8695652173913043,
+        "validation_fpr": 0.49617151607963245,
+        "fpr_limit": null
+      },
+      "fpr20": {
+        "threshold": 0.07494842261075974,
+        "policy": "fpr20",
+        "validation_objective": 0.34782608695652173,
+        "validation_recall": 0.34782608695652173,
+        "validation_fpr": 0.15926493108728942,
+        "fpr_limit": 0.2
+      },
+      "fpr10": {
+        "threshold": 0.09068099409341812,
+        "policy": "fpr10",
+        "validation_objective": 0.2608695652173913,
+        "validation_recall": 0.2608695652173913,
+        "validation_fpr": 0.0888208269525268,
+        "fpr_limit": 0.1
+      },
+      "f1": {
+        "threshold": 0.09406457096338272,
+        "policy": "f1"
+      },
+      "fixed050": {
+        "threshold": 0.5,
+        "policy": "fixed050",
+        "fitted": false
+      }
+    },
+    "monotone_sigmoid": {
+      "balanced_accuracy": {
+        "threshold": 0.032846572511464424,
+        "policy": "balanced_accuracy",
+        "validation_objective": 0.6866968506558359,
+        "validation_recall": 0.8695652173913043,
+        "validation_fpr": 0.49617151607963245,
+        "fpr_limit": null
+      },
+      "fpr20": {
+        "threshold": 0.044431884362172595,
+        "policy": "fpr20",
+        "validation_objective": 0.34782608695652173,
+        "validation_recall": 0.34782608695652173,
+        "validation_fpr": 0.15926493108728942,
+        "fpr_limit": 0.2
+      },
+      "fpr10": {
+        "threshold": 0.062007840856510454,
+        "policy": "fpr10",
+        "validation_objective": 0.2608695652173913,
+        "validation_recall": 0.2608695652173913,
+        "validation_fpr": 0.0888208269525268,
+        "fpr_limit": 0.1
+      },
+      "f1": {
+        "threshold": 0.06610597511086971,
+        "policy": "f1"
+      },
+      "fixed050": {
+        "threshold": 0.5,
+        "policy": "fixed050",
+        "fitted": false
+      }
+    }
+  }
+}

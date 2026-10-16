@@ -1,0 +1,73 @@
+{
+  "status": "completed",
+  "title": "Select frozen procedures and fit final pre-2026 models",
+  "started_utc": "2026-10-16T01:40:54.342938+00:00",
+  "finished_utc": "2026-10-16T01:43:31.988671+00:00",
+  "elapsed_seconds": 157.645,
+  "detail": {
+    "choice": {
+      "main": {
+        "model_id": "xgboost__vegetation__all__monotone_sigmoid",
+        "base_id": "xgboost__vegetation__all",
+        "kind": "xgboost",
+        "family": "vegetation",
+        "window": "all",
+        "mode": "monotone_sigmoid",
+        "mean_log_loss": 0.14067333336505183,
+        "mean_AP": 0.0520456025311961,
+        "mean_AUC": 0.5796059864988209,
+        "mean_recall": 0.36266233766233763,
+        "mean_FPR": 0.3545540402205626,
+        "folds": 4
+      },
+      "best_full": {
+        "model_id": "random_forest__full__all__monotone_sigmoid",
+        "base_id": "random_forest__full__all",
+        "kind": "random_forest",
+        "family": "full",
+        "window": "all",
+        "mode": "monotone_sigmoid",
+        "mean_log_loss": 0.14146843446366433,
+        "mean_AP": 0.064962718950227,
+        "mean_AUC": 0.609064129091161,
+        "mean_recall": 0.2778514963297572,
+        "mean_FPR": 0.18336430348447655,
+        "folds": 4
+      },
+      "best_raw": {
+        "model_id": "random_forest__full__all__raw",
+        "base_id": "random_forest__full__all",
+        "kind": "random_forest",
+        "family": "full",
+        "window": "all",
+        "mode": "raw",
+        "mean_log_loss": 0.1465478067567409,
+        "mean_AP": 0.064962718950227,
+        "mean_AUC": 0.609064129091161,
+        "mean_recall": 0.2778514963297572,
+        "mean_FPR": 0.18336430348447655,
+        "folds": 4
+      },
+      "AP_alternative": {
+        "model_id": "logistic__full__all__monotone_sigmoid",
+        "base_id": "logistic__full__all",
+        "kind": "logistic",
+        "family": "full",
+        "window": "all",
+        "mode": "monotone_sigmoid",
+        "mean_log_loss": 0.14321203018717898,
+        "mean_AP": 0.07798774718325127,
+        "mean_AUC": 0.6078588250935424,
+        "mean_recall": 0.3079968944099378,
+        "mean_FPR": 0.21449224031978137,
+        "folds": 4
+      },
+      "rule": "Minimum mean 2025 outer-quarter probability loss; higher AP then model ID ties",
+      "evaluated_2026_to_choose": false,
+      "independent_test": false
+    },
+    "final_models": 27,
+    "inner_trials": 108,
+    "final_fitting_uses_2026": false
+  }
+}

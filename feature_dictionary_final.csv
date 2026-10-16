@@ -1,0 +1,93 @@
+﻿column,group,description,use_as_feature
+date,key,Date (Asia/Manila),key/filter
+recloser,key,Recloser area (16 modelable reclosers),key/filter
+circuit,key,Parent circuit; blank where notices do not confirm it,key/filter
+year_month,key,Join key for monthly vegetation,key/filter
+target_outage,TARGET,"1 if the recloser area had a local unscheduled outage: named, or covered by a feeder/circuit notice listing its whole core footprint",TARGET
+target_named_local,target (comparison),Recloser named in a local notice only,NO (label/leaks)
+target_sustained_local,target (comparison),"Same, excluding momentary auto-reclose trips",NO (label/leaks)
+src_named,target source,Component: named recloser notice,NO (label/leaks)
+src_feeder,target source,Component: feeder notice,NO (label/leaks)
+src_circuit,target source,Component: circuit notice,NO (label/leaks)
+n_events_local,same-day detail,Distinct local events covering this recloser today,NO (label/leaks)
+n_momentary_named,same-day detail,Momentary auto-reclose posts today,NO (label/leaks)
+max_duration_min,same-day detail,Longest covering event duration (min); blank if unknown,NO (label/leaks)
+duration_known,same-day detail,1 if max_duration_min is known,NO (label/leaks)
+mask_upstream,mask,Upstream/grid event: drop from training,filter only
+mask_load_shedding,mask,Load shedding that day: drop,filter only
+mask_planned,mask,Planned work overlapped this area: drop,filter only
+uncertain_unattributed_event,flag,Unnamed notice overlapped this area; a 0 may be a false 0,filter only
+date_low_confidence,flag,A named event that day has a low-confidence date,filter only
+feeder_partial_local,same-day detail,Feeder posts listing only part of the footprint,NO (label/leaks)
+circuit_partial_local,same-day detail,Circuit posts listing only part of the footprint,NO (label/leaks)
+higher_level_units,same-day detail,Feeder/circuit posts behind the counts,NO (label/leaks)
+base_usable,mask,1 if none of the three masks apply,filter only
+split,split,"train <= 2025-06-30, valid 2025-07-01..2025-12-31, test >= 2026-01-01",key/filter
+wx_weather_code,weather (same day),WMO weather code,yes
+wx_temperature_2m_max,weather (same day),Daily max temperature (C),yes
+wx_temperature_2m_min,weather (same day),Daily min temperature (C),yes
+wx_temperature_2m_mean,weather (same day),Daily mean temperature (C),yes
+wx_apparent_temperature_max,weather (same day),Daily max apparent temperature (C),yes
+wx_relative_humidity_2m_mean,weather (same day),Mean relative humidity (%),yes
+wx_relative_humidity_2m_max,weather (same day),Max relative humidity (%),yes
+wx_relative_humidity_2m_min,weather (same day),Min relative humidity (%),yes
+wx_wind_speed_10m_max,weather (same day),Max 10 m wind speed (km/h),yes
+wx_wind_speed_10m_mean,weather (same day),Mean 10 m wind speed (km/h),yes
+wx_wind_gusts_10m_max,weather (same day),Max 10 m gust (km/h),yes
+wx_precipitation_sum,weather (same day),Daily precipitation (mm),yes
+wx_precipitation_hours,weather (same day),Hours with precipitation,yes
+wx_temp_range,weather (same day),Max minus min temperature (C),yes
+wx_wind_dir_sin,weather (same day),"Dominant wind direction, sine",yes
+wx_wind_dir_cos,weather (same day),"Dominant wind direction, cosine",yes
+wxlag1_precipitation_sum,weather lag,precipitation_sum 1 day(s) before,yes
+wxlag2_precipitation_sum,weather lag,precipitation_sum 2 day(s) before,yes
+wxlag3_precipitation_sum,weather lag,precipitation_sum 3 day(s) before,yes
+wxlag1_precipitation_hours,weather lag,precipitation_hours 1 day(s) before,yes
+wxlag2_precipitation_hours,weather lag,precipitation_hours 2 day(s) before,yes
+wxlag3_precipitation_hours,weather lag,precipitation_hours 3 day(s) before,yes
+wxlag1_wind_gusts_10m_max,weather lag,wind_gusts_10m_max 1 day(s) before,yes
+wxlag2_wind_gusts_10m_max,weather lag,wind_gusts_10m_max 2 day(s) before,yes
+wxlag3_wind_gusts_10m_max,weather lag,wind_gusts_10m_max 3 day(s) before,yes
+wxlag1_wind_speed_10m_max,weather lag,wind_speed_10m_max 1 day(s) before,yes
+wxlag2_wind_speed_10m_max,weather lag,wind_speed_10m_max 2 day(s) before,yes
+wxlag3_wind_speed_10m_max,weather lag,wind_speed_10m_max 3 day(s) before,yes
+wxlag1_temperature_2m_max,weather lag,temperature_2m_max 1 day(s) before,yes
+wxlag2_temperature_2m_max,weather lag,temperature_2m_max 2 day(s) before,yes
+wxlag3_temperature_2m_max,weather lag,temperature_2m_max 3 day(s) before,yes
+wxlag1_apparent_temperature_max,weather lag,apparent_temperature_max 1 day(s) before,yes
+wxlag2_apparent_temperature_max,weather lag,apparent_temperature_max 2 day(s) before,yes
+wxlag3_apparent_temperature_max,weather lag,apparent_temperature_max 3 day(s) before,yes
+wxlag1_relative_humidity_2m_mean,weather lag,relative_humidity_2m_mean 1 day(s) before,yes
+wxlag2_relative_humidity_2m_mean,weather lag,relative_humidity_2m_mean 2 day(s) before,yes
+wxlag3_relative_humidity_2m_mean,weather lag,relative_humidity_2m_mean 3 day(s) before,yes
+wxprev3d_precip_sum,weather antecedent,precip_sum over the 3 days before the date (excludes the date),yes
+wxprev7d_precip_sum,weather antecedent,precip_sum over the 7 days before the date (excludes the date),yes
+wxprev14d_precip_sum,weather antecedent,precip_sum over the 14 days before the date (excludes the date),yes
+wxprev30d_precip_sum,weather antecedent,precip_sum over the 30 days before the date (excludes the date),yes
+wxprev7d_precip_hours_sum,weather antecedent,precip_hours_sum over the 7 days before the date (excludes the date),yes
+wxprev3d_gust_max,weather antecedent,gust_max over the 3 days before the date (excludes the date),yes
+wxprev7d_gust_max,weather antecedent,gust_max over the 7 days before the date (excludes the date),yes
+wxprev30d_gust_max,weather antecedent,gust_max over the 30 days before the date (excludes the date),yes
+wxprev7d_temp_max_mean,weather antecedent,temp_max_mean over the 7 days before the date (excludes the date),yes
+wxprev7d_rh_mean,weather antecedent,rh_mean over the 7 days before the date (excludes the date),yes
+has_weather,flag,1 if Open-Meteo data exists for the date,key/filter
+hist_out_lag1,history (from target_outage),target_outage 1 day earlier (same recloser),yes
+hist_out_lag2,history (from target_outage),... 2 days earlier,yes
+hist_out_lag3,history (from target_outage),... 3 days earlier,yes
+hist_out_count_prev7d,history (from target_outage),Outage days in previous 7 days,yes
+hist_out_count_prev30d,history (from target_outage),... previous 30 days,yes
+hist_out_count_prev90d,history (from target_outage),... previous 90 days,yes
+hist_days_since_last_outage,history (from target_outage),Days since last outage before this date (blank if none yet),yes
+hist_named_count_prev30d,history (from target_outage),Recloser-named outage days in previous 30 days,yes
+hist_momentary_days_prev30d,history (from target_outage),"Days with a momentary auto-reclose, previous 30 days",yes
+hist_minutes_prev7d,history (from target_outage),"Sum of daily longest outage minutes, previous 7 days (unknown = 0)",yes
+hist_minutes_prev30d,history (from target_outage),... previous 30 days,yes
+hist_mean_duration_prev30d,history (from target_outage),"Mean daily longest outage minutes over days with a known duration, previous 30 days",yes
+hist_others_outage_count_lag1,history (from target_outage),Other reclosers with an outage the day before,yes
+hist_others_outage_count_prev7d,history (from target_outage),"Outage recloser-days of other reclosers, previous 7 days",yes
+cal_month,calendar,Month,yes
+cal_doy_sin,calendar,"Day of year, sine",yes
+cal_doy_cos,calendar,"Day of year, cosine",yes
+cal_dow,calendar,Day of week (0=Mon),yes
+cal_is_weekend,calendar,Sat/Sun,yes
+model_ready,flag,"1 = unmasked, weather present, 30-day windows full: the rows to train/evaluate on",key/filter

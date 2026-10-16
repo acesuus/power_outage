@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+.mpl_cache/
+**/.mpl_cache/
+refits/
+.env
+.env.*
+*.pem
+*.key

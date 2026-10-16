@@ -1,0 +1,119 @@
+﻿variable,definition,unit,timing,families
+recloser_id,Named recloser service-area category; not a geographic coordinate,category,fixed,history;full;rainfall;wind;temperature_humidity;vegetation;all_weather;full_local;full_dry;full_local_dry
+day_of_week,Monday=0 through Sunday=6; categorical,category,D,history;full;rainfall;wind;temperature_humidity;vegetation;all_weather;full_local;full_dry;full_local_dry;legacy_full
+day_of_year_sin,Sine of annual calendar position; leap-year adjusted,unitless,D,history;full;rainfall;wind;temperature_humidity;vegetation;all_weather;full_local;full_dry;full_local_dry;legacy_full
+day_of_year_cos,Cosine of annual calendar position; leap-year adjusted,unitless,D,history;full;rainfall;wind;temperature_humidity;vegetation;all_weather;full_local;full_dry;full_local_dry;legacy_full
+outage_days_prev3d,"Distinct mapped recloser area outage dates in [D-3,D-1], published by D-1 20:00 PHT",days,prior incidents,history;full;rainfall;wind;temperature_humidity;vegetation;all_weather;full_local;full_dry;full_local_dry;legacy_full
+outage_days_prev7d,"Distinct mapped recloser area outage dates in [D-7,D-1], published by D-1 20:00 PHT",days,prior incidents,history;full;rainfall;wind;temperature_humidity;vegetation;all_weather;full_local;full_dry;full_local_dry;legacy_full
+days_since_last_outage_capped7,"Days since last known earlier mapped recloser area outage date, capped at 7; 7 if none",days,prior incidents,history;full;rainfall;wind;temperature_humidity;vegetation;all_weather;full_local;full_dry;full_local_dry;legacy_full
+equipment_fault_days_prev7d,"Distinct equipment-fault mapped recloser area dates in [D-7,D-1]; fault-bearing post published by D-1 20:00 PHT",days,prior incidents,history;full;rainfall;wind;temperature_humidity;vegetation;all_weather;full_local;full_dry;full_local_dry;legacy_full
+equipment_fault_days_prev14d,"Distinct equipment-fault mapped recloser area dates in [D-14,D-1]; fault-bearing post published by D-1 20:00 PHT",days,prior incidents,history;full;rainfall;wind;temperature_humidity;vegetation;all_weather;full_local;full_dry;full_local_dry;legacy_full
+rain_mean_mm,Equal mean of daily precipitation across fixed weather barangays; never spatial sum,mm,D,full;rainfall;all_weather;full_local;full_dry;full_local_dry
+rain_max_mm,Largest daily precipitation at any fixed weather barangay,mm,D,full;rainfall;all_weather;full_local;full_dry;full_local_dry
+rainy_barangay_fraction,Fraction of fixed weather barangays with precipitation >=0.1 mm,fraction,D,full;rainfall;all_weather;full_local;full_dry;full_local_dry
+rain_hours_mean,Equal mean of hourly precipitation-duration summaries,hours,D,full;rainfall;all_weather;full_local;full_dry;full_local_dry
+rain_hourly_peak_max_mm,Largest daily hourly precipitation peak across fixed weather barangays,mm in one hour,D,full;rainfall;all_weather;full_local;full_dry;full_local_dry
+gust_mean_kmh,Equal mean of barangay daily maximum gusts,km/h,D,full;wind;all_weather;full_local;full_dry;full_local_dry
+gust_max_kmh,Largest barangay daily maximum gust,km/h,D,full;wind;all_weather;full_local;full_dry;full_local_dry
+temperature_mean_c,Equal mean of barangay daily mean temperatures,degrees C,D,full;temperature_humidity;all_weather;full_local;full_dry;full_local_dry;legacy_full
+humidity_mean_pct,Equal mean of barangay daily mean relative humidity,percent,D,full;temperature_humidity;all_weather;full_local;full_dry;full_local_dry;legacy_full
+weather_code,"Modal barangay daily WMO code, smallest numeric category breaks ties; categorical",WMO category,D,full;all_weather;full_local;full_dry;full_local_dry;legacy_full
+rain_mean_lag1d_mm,Previous calendar-day mapped recloser area mean daily rainfall,mm,D-1,full;rainfall;all_weather;full_local;full_dry;full_local_dry
+rain_mean_sum_prev3d_mm,"Sum of mapped recloser area mean daily rainfall over [D-3,D-1]",mm,historical weather,full;rainfall;all_weather;full_local;full_dry;full_local_dry
+rain_mean_sum_prev7d_mm,"Sum of mapped recloser area mean daily rainfall over [D-7,D-1]",mm,historical weather,full;rainfall;all_weather;full_local;full_dry;full_local_dry
+rain_max_lag1d_mm,Previous calendar-day mapped recloser area spatial maximum daily rainfall,mm,D-1,full;rainfall;all_weather;full_local;full_dry;full_local_dry
+rain_max_sum_prev3d_mm,"Sum of mapped recloser area spatial maximum daily rainfall over [D-3,D-1]; daily maxima may come from different barangays",mm,historical weather,full;rainfall;all_weather;full_local;full_dry;full_local_dry
+rain_max_sum_prev7d_mm,"Sum of mapped recloser area spatial maximum daily rainfall over [D-7,D-1]; daily maxima may come from different barangays",mm,historical weather,full;rainfall;all_weather;full_local;full_dry;full_local_dry
+gust_max_lag1d_kmh,Previous calendar-day mapped recloser area spatial maximum daily gust,km/h,D-1,full;wind;all_weather;full_local;full_dry;full_local_dry
+gust_max_prev3d_kmh,"Maximum of mapped recloser area spatial maximum daily gust over [D-3,D-1]",km/h,historical weather,full;wind;all_weather;full_local;full_dry;full_local_dry
+gust_max_prev7d_kmh,"Maximum of mapped recloser area spatial maximum daily gust over [D-7,D-1]",km/h,historical weather,full;wind;all_weather;full_local;full_dry;full_local_dry
+wet_days_prev3d,Prior days with mapped-mean recloser rainfall >=0.1 mm; inherited original recloser definition,days,historical weather,full;rainfall;all_weather;full_local;full_dry;full_local_dry;legacy_full
+wet_days_prev7d,Prior days with mapped-mean recloser rainfall >=0.1 mm; inherited original recloser definition,days,historical weather,full;rainfall;all_weather;full_local;full_dry;full_local_dry;legacy_full
+veg5_mean,Available-barangay mean of supplied 5 m vegetation buffer proxy,source fraction/index,D month,full;vegetation;full_local;full_dry;full_local_dry
+veg30_mean,Available-barangay mean of supplied 30 m vegetation buffer proxy,source fraction/index,D month,full;vegetation;full_local;full_dry;full_local_dry
+veg5_spatial_p90,90th percentile across available barangay 5 m vegetation proxies; not pixel P90,source fraction/index,D month,full;vegetation;full_local;full_dry;full_local_dry
+ndvi_barangay_mean,Mean of available barangay-level NDVI means,NDVI,D month,full;vegetation;full_local;full_dry;full_local_dry
+rain_max_x_veg5p90,City maximum rainfall multiplied by spatial P90 vegetation proxy,mm x source proxy,D and D month,full;full_dry
+gust_max_x_veg5p90,City maximum gust multiplied by spatial P90 vegetation proxy,km/h x source proxy,D and D month,full;full_dry
+rain_present_x_equipment14d,Any-barangay rain >=0.1 mm times known equipment-fault mapped recloser area-days in prior 14 days,days,D rain and prior incidents,full;full_local;full_dry;full_local_dry
+local_rain_veg5_mean,Mean of same-barangay D rainfall x D-month 5 m vegetation; observed vegetation sites only,mm x source proxy,D weather and D month,full_local;full_local_dry
+local_rain_veg5_max,Maximum of same-barangay D rainfall x D-month 5 m vegetation; observed sites only,mm x source proxy,D weather and D month,full_local;full_local_dry
+local_gust_veg5_mean,Mean of same-barangay D maximum gust x D-month 5 m vegetation; observed sites only,km/h x source proxy,D weather and D month,full_local;full_local_dry
+local_gust_veg5_max,Maximum of same-barangay D maximum gust x D-month 5 m vegetation; observed sites only,km/h x source proxy,D weather and D month,full_local;full_local_dry
+rain_after_3dry_fraction,D rainfall >=0.1 mm following rainfall <0.1 mm on each of D-3 through D-1 at that same site,fraction of mapped sites,D weather plus previous 3/7 days,full_dry;full_local_dry
+rain_after_7dry_fraction,D rainfall >=0.1 mm following rainfall <0.1 mm on each of D-7 through D-1 at that same site,fraction of mapped sites,D weather plus previous 3/7 days,full_dry;full_local_dry
+precipitation_mm,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+temperature_max_c,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+temperature_min_c,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+wind_speed_max_kmh,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+wind_speed_mean_kmh,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+wind_gust_max_kmh,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+wind_direction_sin,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+wind_direction_cos,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+apparent_temperature_max_c,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+humidity_max_pct,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+humidity_min_pct,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+precipitation_lag1d_mm,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+wind_gust_max_lag1d_kmh,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+temperature_mean_lag1d_c,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+humidity_mean_lag1d_pct,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+precipitation_sum_prev3d_mm,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+wind_gust_max_prev3d_kmh,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+temperature_mean_prev3d_c,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+humidity_mean_prev3d_pct,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+precipitation_sum_prev7d_mm,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+wind_gust_max_prev7d_kmh,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+temperature_mean_prev7d_c,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+humidity_mean_prev7d_pct,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+veg_buffer_5m,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+veg_buffer_15m,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+veg_buffer_30m,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+ndvi_p90,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+ndvi_mean_brgy,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+valid_frac_b30,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+no_outage_prev7d,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+is_weekend,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+month_sin,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+month_cos,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+psgc,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+repair_notice_days_prev7d,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+repair_notice_days_prev14d,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+line_damage_days_prev7d,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+line_damage_days_prev14d,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+jumper_fault_days_prev7d,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+jumper_fault_days_prev14d,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+transformer_fault_days_prev7d,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+transformer_fault_days_prev14d,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+pole_crossarm_fault_days_prev7d,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+pole_crossarm_fault_days_prev14d,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+consecutive_wet_days_capped7,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+precipitation_vs_fit_p90,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+gust_vs_fit_p90,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+gust_x_veg5m,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+precipitation_x_veg5m,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+precipitation_hours,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+precipitation_hourly_max_mm,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+rain_present,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+consecutive_dry_days_capped7,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+rain_onset_after3drydays,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+precipitation_change_lag1d_mm,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+rain_present_x_outage_days_prev3d,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+rain_present_x_outage_days_prev7d,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+rain_present_x_equipment_fault_days_prev7d,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+rain_present_x_equipment_fault_days_prev14d,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+precipitation_x_equipment_fault_days_prev14d,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+insulator_fault_days_prev7d,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+insulator_fault_days_prev14d,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+fuse_cutout_fault_days_prev7d,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+fuse_cutout_fault_days_prev14d,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+other_recloser_outage_days_prev3d,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+other_recloser_outage_days_prev7d,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+precipitation_area_max_mm,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+precipitation_area_range_mm,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+gust_area_max_kmh,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+gust_area_range_kmh,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+precipitation_hours_area_max,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+precipitation_hourly_max_area_max_mm,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+veg_buffer_5m_area_max,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+veg_buffer_15m_area_max,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full
+veg_buffer_30m_area_max,Original 88-input recloser feature; see preserved FEATURE_CATALOG.md,original source units,original timing,legacy_full

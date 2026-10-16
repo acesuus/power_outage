@@ -1,0 +1,1185 @@
+{
+  "period": [
+    "2022-09-01",
+    "2026-10-09"
+  ],
+  "shared_days": 1500,
+  "barangays": 58,
+  "compared_barangay_days": 87000,
+  "distinct_full_series": 38,
+  "identical_groups": [
+    [
+      "Bagong Sikat (Pob.)",
+      "Bancao-bancao"
+    ],
+    [
+      "Bagong Silang (Pob.)",
+      "Masipag (Pob.)"
+    ],
+    [
+      "Barangay ng mga Mangingisda",
+      "Luzviminda",
+      "Santa Lucia (Pob.)"
+    ],
+    [
+      "Buenavista",
+      "Lucbuan",
+      "Macarascas",
+      "Maruyogon"
+    ],
+    [
+      "Kalipay (Pob.)",
+      "Maligaya (Pob.)"
+    ],
+    [
+      "Liwanag (Pob.)",
+      "Mabuhay (Pob.)",
+      "Masigla (Pob.)"
+    ],
+    [
+      "Magkakaibigan (Pob.)",
+      "Masikap (Pob.)",
+      "Model (Pob.)"
+    ],
+    [
+      "Manggahan (Pob.)",
+      "Maunlad (Pob.)"
+    ],
+    [
+      "Maningning (Pob.)",
+      "Milagrosa (Pob.)",
+      "Tanglaw (Pob.)"
+    ],
+    [
+      "Matahimik (Pob.)",
+      "Pagkakaisa (Pob.)"
+    ],
+    [
+      "Princesa (Pob.)",
+      "Tagumpay (Pob.)"
+    ],
+    [
+      "Salvacion",
+      "Santa Cruz"
+    ],
+    [
+      "San Jose",
+      "San Manuel"
+    ],
+    [
+      "San Miguel",
+      "San Pedro"
+    ]
+  ],
+  "all_14_exact_match_to_ppc_entire_period": [
+    "Barangay ng mga Mangingisda",
+    "Luzviminda",
+    "Santa Lucia (Pob.)"
+  ],
+  "all_values_exact_match_percent_vs_ppc": 41.46633825944171,
+  "metrics": {
+    "weather_code (wmo code)": {
+      "exact_match_percent_vs_ppc": 68.05977011494252,
+      "distinct_barangay_series": 16,
+      "days_all_barangays_identical_percent": 0.8,
+      "barangays_entire_feature_identical_to_ppc": [
+        "Bagong Pag-Asa (Pob.)",
+        "Bagong Sikat (Pob.)",
+        "Bagong Silang (Pob.)",
+        "Bancao-bancao",
+        "Barangay ng mga Mangingisda",
+        "Kalipay (Pob.)",
+        "Liwanag (Pob.)",
+        "Luzviminda",
+        "Mabuhay (Pob.)",
+        "Magkakaibigan (Pob.)",
+        "Maligaya (Pob.)",
+        "Mandaragat",
+        "Manggahan (Pob.)",
+        "Maningning (Pob.)",
+        "Masigla (Pob.)",
+        "Masikap (Pob.)",
+        "Masipag (Pob.)",
+        "Matahimik (Pob.)",
+        "Matiyaga (Pob.)",
+        "Maunlad (Pob.)",
+        "Milagrosa (Pob.)",
+        "Model (Pob.)",
+        "Pagkakaisa (Pob.)",
+        "Princesa (Pob.)",
+        "San Miguel",
+        "San Pedro",
+        "Santa Lucia (Pob.)",
+        "Seaside (Pob.)",
+        "Tagumpay (Pob.)",
+        "Tanglaw (Pob.)"
+      ]
+    },
+    "temperature_2m_max (°C)": {
+      "exact_match_percent_vs_ppc": 6.575862068965517,
+      "distinct_barangay_series": 26,
+      "days_all_barangays_identical_percent": 0.0,
+      "barangays_entire_feature_identical_to_ppc": [
+        "Barangay ng mga Mangingisda",
+        "Luzviminda",
+        "Santa Lucia (Pob.)"
+      ],
+      "mean_absolute_difference_vs_ppc": 0.6488287356321839,
+      "mae_barangay_min": 0.0,
+      "mae_barangay_max": 4.577466666666666,
+      "max_mae_barangays": [
+        "Binduyan"
+      ],
+      "absolute_difference_p95_vs_ppc": 2.5,
+      "absolute_difference_max_vs_ppc": 8.3,
+      "correlation_mean_vs_ppc": 0.8809210070478413,
+      "correlation_min_vs_ppc": 0.5537370951204567,
+      "correlation_max_vs_ppc": 1.0,
+      "mean_daily_spatial_range": 6.1474,
+      "p95_daily_spatial_range": 7.899999999999999,
+      "max_daily_spatial_range": 10.2
+    },
+    "temperature_2m_min (°C)": {
+      "exact_match_percent_vs_ppc": 6.962068965517242,
+      "distinct_barangay_series": 26,
+      "days_all_barangays_identical_percent": 0.0,
+      "barangays_entire_feature_identical_to_ppc": [
+        "Barangay ng mga Mangingisda",
+        "Luzviminda",
+        "Santa Lucia (Pob.)"
+      ],
+      "mean_absolute_difference_vs_ppc": 0.7304586206896551,
+      "mae_barangay_min": 0.0,
+      "mae_barangay_max": 6.0156,
+      "max_mae_barangays": [
+        "Binduyan"
+      ],
+      "absolute_difference_p95_vs_ppc": 3.5,
+      "absolute_difference_max_vs_ppc": 9.4,
+      "correlation_mean_vs_ppc": 0.870528560914828,
+      "correlation_min_vs_ppc": 0.6745978714061492,
+      "correlation_max_vs_ppc": 1.0,
+      "mean_daily_spatial_range": 6.8225999999999996,
+      "p95_daily_spatial_range": 7.904999999999998,
+      "max_daily_spatial_range": 9.6
+    },
+    "temperature_2m_mean (°C)": {
+      "exact_match_percent_vs_ppc": 8.53448275862069,
+      "distinct_barangay_series": 38,
+      "days_all_barangays_identical_percent": 0.0,
+      "barangays_entire_feature_identical_to_ppc": [
+        "Barangay ng mga Mangingisda",
+        "Luzviminda",
+        "Santa Lucia (Pob.)"
+      ],
+      "mean_absolute_difference_vs_ppc": 0.5723206896551724,
+      "mae_barangay_min": 0.0,
+      "mae_barangay_max": 5.684866666666666,
+      "max_mae_barangays": [
+        "Binduyan"
+      ],
+      "absolute_difference_p95_vs_ppc": 3.0,
+      "absolute_difference_max_vs_ppc": 7.199999999999999,
+      "correlation_mean_vs_ppc": 0.9603878641155863,
+      "correlation_min_vs_ppc": 0.8513766128987821,
+      "correlation_max_vs_ppc": 1.0,
+      "mean_daily_spatial_range": 6.384733333333332,
+      "p95_daily_spatial_range": 7.199999999999999,
+      "max_daily_spatial_range": 7.700000000000003
+    },
+    "apparent_temperature_max (°C)": {
+      "exact_match_percent_vs_ppc": 6.014942528735632,
+      "distinct_barangay_series": 38,
+      "days_all_barangays_identical_percent": 0.0,
+      "barangays_entire_feature_identical_to_ppc": [
+        "Barangay ng mga Mangingisda",
+        "Luzviminda",
+        "Santa Lucia (Pob.)"
+      ],
+      "mean_absolute_difference_vs_ppc": 1.0631471264367816,
+      "mae_barangay_min": 0.0,
+      "mae_barangay_max": 7.026866666666668,
+      "max_mae_barangays": [
+        "Binduyan"
+      ],
+      "absolute_difference_p95_vs_ppc": 4.0,
+      "absolute_difference_max_vs_ppc": 12.300000000000004,
+      "correlation_mean_vs_ppc": 0.8666038192100303,
+      "correlation_min_vs_ppc": 0.5458122140199451,
+      "correlation_max_vs_ppc": 1.0,
+      "mean_daily_spatial_range": 9.459800000000001,
+      "p95_daily_spatial_range": 11.8,
+      "max_daily_spatial_range": 14.099999999999998
+    },
+    "relative_humidity_2m_mean (%)": {
+      "exact_match_percent_vs_ppc": 57.04367816091954,
+      "distinct_barangay_series": 33,
+      "days_all_barangays_identical_percent": 0.0,
+      "barangays_entire_feature_identical_to_ppc": [
+        "Barangay ng mga Mangingisda",
+        "Luzviminda",
+        "Santa Lucia (Pob.)"
+      ],
+      "mean_absolute_difference_vs_ppc": 1.2806436781609196,
+      "mae_barangay_min": 0.0,
+      "mae_barangay_max": 4.935333333333333,
+      "max_mae_barangays": [
+        "Binduyan"
+      ],
+      "absolute_difference_p95_vs_ppc": 6.0,
+      "absolute_difference_max_vs_ppc": 21.0,
+      "correlation_mean_vs_ppc": 0.9274081846011224,
+      "correlation_min_vs_ppc": 0.7488534060824563,
+      "correlation_max_vs_ppc": 1.0,
+      "mean_daily_spatial_range": 9.824,
+      "p95_daily_spatial_range": 15.0,
+      "max_daily_spatial_range": 21.0
+    },
+    "relative_humidity_2m_max (%)": {
+      "exact_match_percent_vs_ppc": 56.92528735632184,
+      "distinct_barangay_series": 28,
+      "days_all_barangays_identical_percent": 0.0,
+      "barangays_entire_feature_identical_to_ppc": [
+        "Barangay ng mga Mangingisda",
+        "Luzviminda",
+        "Santa Lucia (Pob.)"
+      ],
+      "mean_absolute_difference_vs_ppc": 1.4486436781609195,
+      "mae_barangay_min": 0.0,
+      "mae_barangay_max": 5.42,
+      "max_mae_barangays": [
+        "Binduyan"
+      ],
+      "absolute_difference_p95_vs_ppc": 6.0,
+      "absolute_difference_max_vs_ppc": 23.0,
+      "correlation_mean_vs_ppc": 0.8046456108447098,
+      "correlation_min_vs_ppc": 0.4166158133042314,
+      "correlation_max_vs_ppc": 1.0,
+      "mean_daily_spatial_range": 8.922666666666666,
+      "p95_daily_spatial_range": 16.0,
+      "max_daily_spatial_range": 27.0
+    },
+    "relative_humidity_2m_min (%)": {
+      "exact_match_percent_vs_ppc": 53.84367816091954,
+      "distinct_barangay_series": 36,
+      "days_all_barangays_identical_percent": 0.0,
+      "barangays_entire_feature_identical_to_ppc": [
+        "Barangay ng mga Mangingisda",
+        "Luzviminda",
+        "Santa Lucia (Pob.)"
+      ],
+      "mean_absolute_difference_vs_ppc": 2.483045977011494,
+      "mae_barangay_min": 0.0,
+      "mae_barangay_max": 8.014,
+      "max_mae_barangays": [
+        "San Rafael"
+      ],
+      "absolute_difference_p95_vs_ppc": 11.0,
+      "absolute_difference_max_vs_ppc": 49.0,
+      "correlation_mean_vs_ppc": 0.8768127712190538,
+      "correlation_min_vs_ppc": 0.6023632891420022,
+      "correlation_max_vs_ppc": 1.0,
+      "mean_daily_spatial_range": 14.567333333333334,
+      "p95_daily_spatial_range": 23.049999999999955,
+      "max_daily_spatial_range": 58.0
+    },
+    "wind_speed_10m_max (km/h)": {
+      "exact_match_percent_vs_ppc": 52.188505747126435,
+      "distinct_barangay_series": 16,
+      "days_all_barangays_identical_percent": 0.0,
+      "barangays_entire_feature_identical_to_ppc": [
+        "Bagong Pag-Asa (Pob.)",
+        "Bagong Sikat (Pob.)",
+        "Bagong Silang (Pob.)",
+        "Bancao-bancao",
+        "Barangay ng mga Mangingisda",
+        "Kalipay (Pob.)",
+        "Liwanag (Pob.)",
+        "Luzviminda",
+        "Mabuhay (Pob.)",
+        "Magkakaibigan (Pob.)",
+        "Maligaya (Pob.)",
+        "Mandaragat",
+        "Manggahan (Pob.)",
+        "Maningning (Pob.)",
+        "Masigla (Pob.)",
+        "Masikap (Pob.)",
+        "Masipag (Pob.)",
+        "Matahimik (Pob.)",
+        "Matiyaga (Pob.)",
+        "Maunlad (Pob.)",
+        "Milagrosa (Pob.)",
+        "Model (Pob.)",
+        "Pagkakaisa (Pob.)",
+        "Princesa (Pob.)",
+        "San Miguel",
+        "San Pedro",
+        "Santa Lucia (Pob.)",
+        "Seaside (Pob.)",
+        "Tagumpay (Pob.)",
+        "Tanglaw (Pob.)"
+      ],
+      "mean_absolute_difference_vs_ppc": 2.081240229885058,
+      "mae_barangay_min": 0.0,
+      "mae_barangay_max": 5.571,
+      "max_mae_barangays": [
+        "Bahile"
+      ],
+      "absolute_difference_p95_vs_ppc": 9.399999999999999,
+      "absolute_difference_max_vs_ppc": 24.6,
+      "correlation_mean_vs_ppc": 0.7271355603738636,
+      "correlation_min_vs_ppc": 0.08387166072392017,
+      "correlation_max_vs_ppc": 1.0,
+      "mean_daily_spatial_range": 11.308333333333334,
+      "p95_daily_spatial_range": 18.504999999999995,
+      "max_daily_spatial_range": 28.7
+    },
+    "wind_speed_10m_mean (km/h)": {
+      "exact_match_percent_vs_ppc": 52.48275862068965,
+      "distinct_barangay_series": 16,
+      "days_all_barangays_identical_percent": 0.0,
+      "barangays_entire_feature_identical_to_ppc": [
+        "Bagong Pag-Asa (Pob.)",
+        "Bagong Sikat (Pob.)",
+        "Bagong Silang (Pob.)",
+        "Bancao-bancao",
+        "Barangay ng mga Mangingisda",
+        "Kalipay (Pob.)",
+        "Liwanag (Pob.)",
+        "Luzviminda",
+        "Mabuhay (Pob.)",
+        "Magkakaibigan (Pob.)",
+        "Maligaya (Pob.)",
+        "Mandaragat",
+        "Manggahan (Pob.)",
+        "Maningning (Pob.)",
+        "Masigla (Pob.)",
+        "Masikap (Pob.)",
+        "Masipag (Pob.)",
+        "Matahimik (Pob.)",
+        "Matiyaga (Pob.)",
+        "Maunlad (Pob.)",
+        "Milagrosa (Pob.)",
+        "Model (Pob.)",
+        "Pagkakaisa (Pob.)",
+        "Princesa (Pob.)",
+        "San Miguel",
+        "San Pedro",
+        "Santa Lucia (Pob.)",
+        "Seaside (Pob.)",
+        "Tagumpay (Pob.)",
+        "Tanglaw (Pob.)"
+      ],
+      "mean_absolute_difference_vs_ppc": 1.399551724137931,
+      "mae_barangay_min": 0.0,
+      "mae_barangay_max": 3.8957333333333337,
+      "max_mae_barangays": [
+        "Bahile"
+      ],
+      "absolute_difference_p95_vs_ppc": 6.7,
+      "absolute_difference_max_vs_ppc": 21.4,
+      "correlation_mean_vs_ppc": 0.7465087633305463,
+      "correlation_min_vs_ppc": 0.08677304839517054,
+      "correlation_max_vs_ppc": 1.0,
+      "mean_daily_spatial_range": 7.759266666666668,
+      "p95_daily_spatial_range": 16.299999999999997,
+      "max_daily_spatial_range": 23.700000000000003
+    },
+    "wind_gusts_10m_max (km/h)": {
+      "exact_match_percent_vs_ppc": 52.6183908045977,
+      "distinct_barangay_series": 16,
+      "days_all_barangays_identical_percent": 0.0,
+      "barangays_entire_feature_identical_to_ppc": [
+        "Bagong Pag-Asa (Pob.)",
+        "Bagong Sikat (Pob.)",
+        "Bagong Silang (Pob.)",
+        "Bancao-bancao",
+        "Barangay ng mga Mangingisda",
+        "Kalipay (Pob.)",
+        "Liwanag (Pob.)",
+        "Luzviminda",
+        "Mabuhay (Pob.)",
+        "Magkakaibigan (Pob.)",
+        "Maligaya (Pob.)",
+        "Mandaragat",
+        "Manggahan (Pob.)",
+        "Maningning (Pob.)",
+        "Masigla (Pob.)",
+        "Masikap (Pob.)",
+        "Masipag (Pob.)",
+        "Matahimik (Pob.)",
+        "Matiyaga (Pob.)",
+        "Maunlad (Pob.)",
+        "Milagrosa (Pob.)",
+        "Model (Pob.)",
+        "Pagkakaisa (Pob.)",
+        "Princesa (Pob.)",
+        "San Miguel",
+        "San Pedro",
+        "Santa Lucia (Pob.)",
+        "Seaside (Pob.)",
+        "Tagumpay (Pob.)",
+        "Tanglaw (Pob.)"
+      ],
+      "mean_absolute_difference_vs_ppc": 3.371671264367816,
+      "mae_barangay_min": 0.0,
+      "mae_barangay_max": 10.326533333333332,
+      "max_mae_barangays": [
+        "Bahile"
+      ],
+      "absolute_difference_p95_vs_ppc": 15.100000000000001,
+      "absolute_difference_max_vs_ppc": 53.3,
+      "correlation_mean_vs_ppc": 0.7621325422547853,
+      "correlation_min_vs_ppc": 0.16902467427525633,
+      "correlation_max_vs_ppc": 0.9999999999999998,
+      "mean_daily_spatial_range": 20.833933333333334,
+      "p95_daily_spatial_range": 36.30499999999999,
+      "max_daily_spatial_range": 53.3
+    },
+    "wind_direction_10m_dominant (°)": {
+      "exact_match_percent_vs_ppc": 52.03333333333333,
+      "distinct_barangay_series": 16,
+      "days_all_barangays_identical_percent": 0.0,
+      "barangays_entire_feature_identical_to_ppc": [
+        "Bagong Pag-Asa (Pob.)",
+        "Bagong Sikat (Pob.)",
+        "Bagong Silang (Pob.)",
+        "Bancao-bancao",
+        "Barangay ng mga Mangingisda",
+        "Kalipay (Pob.)",
+        "Liwanag (Pob.)",
+        "Luzviminda",
+        "Mabuhay (Pob.)",
+        "Magkakaibigan (Pob.)",
+        "Maligaya (Pob.)",
+        "Mandaragat",
+        "Manggahan (Pob.)",
+        "Maningning (Pob.)",
+        "Masigla (Pob.)",
+        "Masikap (Pob.)",
+        "Masipag (Pob.)",
+        "Matahimik (Pob.)",
+        "Matiyaga (Pob.)",
+        "Maunlad (Pob.)",
+        "Milagrosa (Pob.)",
+        "Model (Pob.)",
+        "Pagkakaisa (Pob.)",
+        "Princesa (Pob.)",
+        "San Miguel",
+        "San Pedro",
+        "Santa Lucia (Pob.)",
+        "Seaside (Pob.)",
+        "Tagumpay (Pob.)",
+        "Tanglaw (Pob.)"
+      ],
+      "mean_absolute_difference_vs_ppc": 23.035724137931034,
+      "mae_barangay_min": 0.0,
+      "mae_barangay_max": 76.94266666666667,
+      "max_mae_barangays": [
+        "Buenavista",
+        "Lucbuan",
+        "Macarascas",
+        "Manalo",
+        "Maoyon",
+        "Maruyogon"
+      ],
+      "absolute_difference_p95_vs_ppc": 104.0,
+      "absolute_difference_max_vs_ppc": 180.0
+    },
+    "precipitation_sum (mm)": {
+      "exact_match_percent_vs_ppc": 53.622988505747124,
+      "distinct_barangay_series": 16,
+      "days_all_barangays_identical_percent": 0.26666666666666666,
+      "barangays_entire_feature_identical_to_ppc": [
+        "Bagong Pag-Asa (Pob.)",
+        "Bagong Sikat (Pob.)",
+        "Bagong Silang (Pob.)",
+        "Bancao-bancao",
+        "Barangay ng mga Mangingisda",
+        "Kalipay (Pob.)",
+        "Liwanag (Pob.)",
+        "Luzviminda",
+        "Mabuhay (Pob.)",
+        "Magkakaibigan (Pob.)",
+        "Maligaya (Pob.)",
+        "Mandaragat",
+        "Manggahan (Pob.)",
+        "Maningning (Pob.)",
+        "Masigla (Pob.)",
+        "Masikap (Pob.)",
+        "Masipag (Pob.)",
+        "Matahimik (Pob.)",
+        "Matiyaga (Pob.)",
+        "Maunlad (Pob.)",
+        "Milagrosa (Pob.)",
+        "Model (Pob.)",
+        "Pagkakaisa (Pob.)",
+        "Princesa (Pob.)",
+        "San Miguel",
+        "San Pedro",
+        "Santa Lucia (Pob.)",
+        "Seaside (Pob.)",
+        "Tagumpay (Pob.)",
+        "Tanglaw (Pob.)"
+      ],
+      "mean_absolute_difference_vs_ppc": 2.298550574712644,
+      "mae_barangay_min": 0.0,
+      "mae_barangay_max": 5.713333333333333,
+      "max_mae_barangays": [
+        "Cabayugan"
+      ],
+      "absolute_difference_p95_vs_ppc": 11.7,
+      "absolute_difference_max_vs_ppc": 112.5,
+      "correlation_mean_vs_ppc": 0.8334515678621431,
+      "correlation_min_vs_ppc": 0.5282726548791624,
+      "correlation_max_vs_ppc": 1.0,
+      "mean_daily_spatial_range": 13.258466666666665,
+      "p95_daily_spatial_range": 34.4,
+      "max_daily_spatial_range": 112.5
+    },
+    "rain_sum (mm)": {
+      "exact_match_percent_vs_ppc": 53.622988505747124,
+      "distinct_barangay_series": 16,
+      "days_all_barangays_identical_percent": 0.26666666666666666,
+      "barangays_entire_feature_identical_to_ppc": [
+        "Bagong Pag-Asa (Pob.)",
+        "Bagong Sikat (Pob.)",
+        "Bagong Silang (Pob.)",
+        "Bancao-bancao",
+        "Barangay ng mga Mangingisda",
+        "Kalipay (Pob.)",
+        "Liwanag (Pob.)",
+        "Luzviminda",
+        "Mabuhay (Pob.)",
+        "Magkakaibigan (Pob.)",
+        "Maligaya (Pob.)",
+        "Mandaragat",
+        "Manggahan (Pob.)",
+        "Maningning (Pob.)",
+        "Masigla (Pob.)",
+        "Masikap (Pob.)",
+        "Masipag (Pob.)",
+        "Matahimik (Pob.)",
+        "Matiyaga (Pob.)",
+        "Maunlad (Pob.)",
+        "Milagrosa (Pob.)",
+        "Model (Pob.)",
+        "Pagkakaisa (Pob.)",
+        "Princesa (Pob.)",
+        "San Miguel",
+        "San Pedro",
+        "Santa Lucia (Pob.)",
+        "Seaside (Pob.)",
+        "Tagumpay (Pob.)",
+        "Tanglaw (Pob.)"
+      ],
+      "mean_absolute_difference_vs_ppc": 2.298550574712644,
+      "mae_barangay_min": 0.0,
+      "mae_barangay_max": 5.713333333333333,
+      "max_mae_barangays": [
+        "Cabayugan"
+      ],
+      "absolute_difference_p95_vs_ppc": 11.7,
+      "absolute_difference_max_vs_ppc": 112.5,
+      "correlation_mean_vs_ppc": 0.8334515678621431,
+      "correlation_min_vs_ppc": 0.5282726548791624,
+      "correlation_max_vs_ppc": 1.0,
+      "mean_daily_spatial_range": 13.258466666666665,
+      "p95_daily_spatial_range": 34.4,
+      "max_daily_spatial_range": 112.5
+    }
+  },
+  "per_barangay": [
+    {
+      "barangay": "Babuyan",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 5.485714285714286,
+      "temperature_2m_mean (°C)_mae": 1.0804,
+      "relative_humidity_2m_mean (%)_mae": 2.728666666666667,
+      "precipitation_sum (mm)_mae": 5.471666666666667,
+      "wind_gusts_10m_max (km/h)_mae": 7.517666666666667
+    },
+    {
+      "barangay": "Bacungan",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 7.133333333333333,
+      "temperature_2m_mean (°C)_mae": 0.3098,
+      "relative_humidity_2m_mean (%)_mae": 2.19,
+      "precipitation_sum (mm)_mae": 4.683933333333333,
+      "wind_gusts_10m_max (km/h)_mae": 8.7276
+    },
+    {
+      "barangay": "Bagong Pag-Asa (Pob.)",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 70.81428571428572,
+      "temperature_2m_mean (°C)_mae": 0.2912666666666667,
+      "relative_humidity_2m_mean (%)_mae": 0.028,
+      "precipitation_sum (mm)_mae": 0.0,
+      "wind_gusts_10m_max (km/h)_mae": 0.0
+    },
+    {
+      "barangay": "Bagong Sikat (Pob.)",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 71.06666666666666,
+      "temperature_2m_mean (°C)_mae": 0.18059999999999996,
+      "relative_humidity_2m_mean (%)_mae": 0.017333333333333333,
+      "precipitation_sum (mm)_mae": 0.0,
+      "wind_gusts_10m_max (km/h)_mae": 0.0
+    },
+    {
+      "barangay": "Bagong Silang (Pob.)",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 70.9952380952381,
+      "temperature_2m_mean (°C)_mae": 0.21339999999999995,
+      "relative_humidity_2m_mean (%)_mae": 0.018666666666666668,
+      "precipitation_sum (mm)_mae": 0.0,
+      "wind_gusts_10m_max (km/h)_mae": 0.0
+    },
+    {
+      "barangay": "Bahile",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 7.095238095238095,
+      "temperature_2m_mean (°C)_mae": 0.2968,
+      "relative_humidity_2m_mean (%)_mae": 2.469333333333333,
+      "precipitation_sum (mm)_mae": 5.009333333333332,
+      "wind_gusts_10m_max (km/h)_mae": 10.326533333333332
+    },
+    {
+      "barangay": "Bancao-bancao",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 71.06666666666666,
+      "temperature_2m_mean (°C)_mae": 0.18059999999999996,
+      "relative_humidity_2m_mean (%)_mae": 0.017333333333333333,
+      "precipitation_sum (mm)_mae": 0.0,
+      "wind_gusts_10m_max (km/h)_mae": 0.0
+    },
+    {
+      "barangay": "Barangay ng mga Mangingisda",
+      "days_all_14_match_ppc": 1500,
+      "all_feature_values_match_percent": 100.0,
+      "temperature_2m_mean (°C)_mae": 0.0,
+      "relative_humidity_2m_mean (%)_mae": 0.0,
+      "precipitation_sum (mm)_mae": 0.0,
+      "wind_gusts_10m_max (km/h)_mae": 0.0
+    },
+    {
+      "barangay": "Binduyan",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 4.314285714285714,
+      "temperature_2m_mean (°C)_mae": 5.684866666666666,
+      "relative_humidity_2m_mean (%)_mae": 4.935333333333333,
+      "precipitation_sum (mm)_mae": 4.761666666666667,
+      "wind_gusts_10m_max (km/h)_mae": 5.992666666666667
+    },
+    {
+      "barangay": "Buenavista",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 6.580952380952381,
+      "temperature_2m_mean (°C)_mae": 0.4673333333333333,
+      "relative_humidity_2m_mean (%)_mae": 2.167333333333333,
+      "precipitation_sum (mm)_mae": 5.261666666666667,
+      "wind_gusts_10m_max (km/h)_mae": 8.562600000000002
+    },
+    {
+      "barangay": "Cabayugan",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 5.3809523809523805,
+      "temperature_2m_mean (°C)_mae": 0.6328,
+      "relative_humidity_2m_mean (%)_mae": 3.838,
+      "precipitation_sum (mm)_mae": 5.713333333333333,
+      "wind_gusts_10m_max (km/h)_mae": 7.855199999999999
+    },
+    {
+      "barangay": "Concepcion",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 5.819047619047619,
+      "temperature_2m_mean (°C)_mae": 1.9014,
+      "relative_humidity_2m_mean (%)_mae": 2.802,
+      "precipitation_sum (mm)_mae": 4.9387333333333325,
+      "wind_gusts_10m_max (km/h)_mae": 6.422133333333334
+    },
+    {
+      "barangay": "Irawan",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 8.176190476190476,
+      "temperature_2m_mean (°C)_mae": 0.27686666666666665,
+      "relative_humidity_2m_mean (%)_mae": 2.088,
+      "precipitation_sum (mm)_mae": 4.3894,
+      "wind_gusts_10m_max (km/h)_mae": 4.988133333333333
+    },
+    {
+      "barangay": "Iwahig (Pob.)",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 7.9190476190476184,
+      "temperature_2m_mean (°C)_mae": 0.2045333333333333,
+      "relative_humidity_2m_mean (%)_mae": 2.3713333333333333,
+      "precipitation_sum (mm)_mae": 3.667333333333333,
+      "wind_gusts_10m_max (km/h)_mae": 4.6324000000000005
+    },
+    {
+      "barangay": "Kalipay (Pob.)",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 71.08095238095238,
+      "temperature_2m_mean (°C)_mae": 0.17399999999999996,
+      "relative_humidity_2m_mean (%)_mae": 0.016,
+      "precipitation_sum (mm)_mae": 0.0,
+      "wind_gusts_10m_max (km/h)_mae": 0.0
+    },
+    {
+      "barangay": "Langogan",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 5.0285714285714285,
+      "temperature_2m_mean (°C)_mae": 1.7491333333333334,
+      "relative_humidity_2m_mean (%)_mae": 3.8333333333333335,
+      "precipitation_sum (mm)_mae": 4.435666666666667,
+      "wind_gusts_10m_max (km/h)_mae": 4.905133333333334
+    },
+    {
+      "barangay": "Liwanag (Pob.)",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 70.98571428571428,
+      "temperature_2m_mean (°C)_mae": 0.2272666666666666,
+      "relative_humidity_2m_mean (%)_mae": 0.018666666666666668,
+      "precipitation_sum (mm)_mae": 0.0,
+      "wind_gusts_10m_max (km/h)_mae": 0.0
+    },
+    {
+      "barangay": "Lucbuan",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 6.580952380952381,
+      "temperature_2m_mean (°C)_mae": 0.4673333333333333,
+      "relative_humidity_2m_mean (%)_mae": 2.167333333333333,
+      "precipitation_sum (mm)_mae": 5.261666666666667,
+      "wind_gusts_10m_max (km/h)_mae": 8.562600000000002
+    },
+    {
+      "barangay": "Luzviminda",
+      "days_all_14_match_ppc": 1500,
+      "all_feature_values_match_percent": 100.0,
+      "temperature_2m_mean (°C)_mae": 0.0,
+      "relative_humidity_2m_mean (%)_mae": 0.0,
+      "precipitation_sum (mm)_mae": 0.0,
+      "wind_gusts_10m_max (km/h)_mae": 0.0
+    },
+    {
+      "barangay": "Mabuhay (Pob.)",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 70.98571428571428,
+      "temperature_2m_mean (°C)_mae": 0.2272666666666666,
+      "relative_humidity_2m_mean (%)_mae": 0.018666666666666668,
+      "precipitation_sum (mm)_mae": 0.0,
+      "wind_gusts_10m_max (km/h)_mae": 0.0
+    },
+    {
+      "barangay": "Macarascas",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 6.580952380952381,
+      "temperature_2m_mean (°C)_mae": 0.4673333333333333,
+      "relative_humidity_2m_mean (%)_mae": 2.167333333333333,
+      "precipitation_sum (mm)_mae": 5.261666666666667,
+      "wind_gusts_10m_max (km/h)_mae": 8.562600000000002
+    },
+    {
+      "barangay": "Magkakaibigan (Pob.)",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 71.0904761904762,
+      "temperature_2m_mean (°C)_mae": 0.16806666666666664,
+      "relative_humidity_2m_mean (%)_mae": 0.016,
+      "precipitation_sum (mm)_mae": 0.0,
+      "wind_gusts_10m_max (km/h)_mae": 0.0
+    },
+    {
+      "barangay": "Maligaya (Pob.)",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 71.08095238095238,
+      "temperature_2m_mean (°C)_mae": 0.17399999999999996,
+      "relative_humidity_2m_mean (%)_mae": 0.016,
+      "precipitation_sum (mm)_mae": 0.0,
+      "wind_gusts_10m_max (km/h)_mae": 0.0
+    },
+    {
+      "barangay": "Manalo",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 7.061904761904763,
+      "temperature_2m_mean (°C)_mae": 0.31213333333333326,
+      "relative_humidity_2m_mean (%)_mae": 2.171333333333333,
+      "precipitation_sum (mm)_mae": 5.261666666666667,
+      "wind_gusts_10m_max (km/h)_mae": 8.562600000000002
+    },
+    {
+      "barangay": "Mandaragat",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 70.9047619047619,
+      "temperature_2m_mean (°C)_mae": 0.24539999999999995,
+      "relative_humidity_2m_mean (%)_mae": 0.02266666666666667,
+      "precipitation_sum (mm)_mae": 0.0,
+      "wind_gusts_10m_max (km/h)_mae": 0.0
+    },
+    {
+      "barangay": "Manggahan (Pob.)",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 71.11428571428571,
+      "temperature_2m_mean (°C)_mae": 0.1531333333333333,
+      "relative_humidity_2m_mean (%)_mae": 0.016,
+      "precipitation_sum (mm)_mae": 0.0,
+      "wind_gusts_10m_max (km/h)_mae": 0.0
+    },
+    {
+      "barangay": "Maningning (Pob.)",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 71.14285714285714,
+      "temperature_2m_mean (°C)_mae": 0.14146666666666663,
+      "relative_humidity_2m_mean (%)_mae": 0.014,
+      "precipitation_sum (mm)_mae": 0.0,
+      "wind_gusts_10m_max (km/h)_mae": 0.0
+    },
+    {
+      "barangay": "Maoyon",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 6.8047619047619055,
+      "temperature_2m_mean (°C)_mae": 0.3852666666666667,
+      "relative_humidity_2m_mean (%)_mae": 2.167333333333333,
+      "precipitation_sum (mm)_mae": 5.261666666666667,
+      "wind_gusts_10m_max (km/h)_mae": 8.562600000000002
+    },
+    {
+      "barangay": "Maruyogon",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 6.580952380952381,
+      "temperature_2m_mean (°C)_mae": 0.4673333333333333,
+      "relative_humidity_2m_mean (%)_mae": 2.167333333333333,
+      "precipitation_sum (mm)_mae": 5.261666666666667,
+      "wind_gusts_10m_max (km/h)_mae": 8.562600000000002
+    },
+    {
+      "barangay": "Masigla (Pob.)",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 70.98571428571428,
+      "temperature_2m_mean (°C)_mae": 0.2272666666666666,
+      "relative_humidity_2m_mean (%)_mae": 0.018666666666666668,
+      "precipitation_sum (mm)_mae": 0.0,
+      "wind_gusts_10m_max (km/h)_mae": 0.0
+    },
+    {
+      "barangay": "Masikap (Pob.)",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 71.0904761904762,
+      "temperature_2m_mean (°C)_mae": 0.16806666666666664,
+      "relative_humidity_2m_mean (%)_mae": 0.016,
+      "precipitation_sum (mm)_mae": 0.0,
+      "wind_gusts_10m_max (km/h)_mae": 0.0
+    },
+    {
+      "barangay": "Masipag (Pob.)",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 70.9952380952381,
+      "temperature_2m_mean (°C)_mae": 0.21339999999999995,
+      "relative_humidity_2m_mean (%)_mae": 0.018666666666666668,
+      "precipitation_sum (mm)_mae": 0.0,
+      "wind_gusts_10m_max (km/h)_mae": 0.0
+    },
+    {
+      "barangay": "Matahimik (Pob.)",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 70.83333333333334,
+      "temperature_2m_mean (°C)_mae": 0.28459999999999996,
+      "relative_humidity_2m_mean (%)_mae": 0.026,
+      "precipitation_sum (mm)_mae": 0.0,
+      "wind_gusts_10m_max (km/h)_mae": 0.0
+    },
+    {
+      "barangay": "Matiyaga (Pob.)",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 71.04285714285714,
+      "temperature_2m_mean (°C)_mae": 0.1867999999999999,
+      "relative_humidity_2m_mean (%)_mae": 0.017333333333333333,
+      "precipitation_sum (mm)_mae": 0.0,
+      "wind_gusts_10m_max (km/h)_mae": 0.0
+    },
+    {
+      "barangay": "Maunlad (Pob.)",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 71.11428571428571,
+      "temperature_2m_mean (°C)_mae": 0.1531333333333333,
+      "relative_humidity_2m_mean (%)_mae": 0.016,
+      "precipitation_sum (mm)_mae": 0.0,
+      "wind_gusts_10m_max (km/h)_mae": 0.0
+    },
+    {
+      "barangay": "Milagrosa (Pob.)",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 71.14285714285714,
+      "temperature_2m_mean (°C)_mae": 0.14146666666666663,
+      "relative_humidity_2m_mean (%)_mae": 0.014,
+      "precipitation_sum (mm)_mae": 0.0,
+      "wind_gusts_10m_max (km/h)_mae": 0.0
+    },
+    {
+      "barangay": "Model (Pob.)",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 71.0904761904762,
+      "temperature_2m_mean (°C)_mae": 0.16806666666666664,
+      "relative_humidity_2m_mean (%)_mae": 0.016,
+      "precipitation_sum (mm)_mae": 0.0,
+      "wind_gusts_10m_max (km/h)_mae": 0.0
+    },
+    {
+      "barangay": "Montible (Pob.)",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 5.961904761904762,
+      "temperature_2m_mean (°C)_mae": 0.49266666666666664,
+      "relative_humidity_2m_mean (%)_mae": 3.2026666666666666,
+      "precipitation_sum (mm)_mae": 3.642333333333333,
+      "wind_gusts_10m_max (km/h)_mae": 3.819533333333333
+    },
+    {
+      "barangay": "Napsan",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 4.133333333333333,
+      "temperature_2m_mean (°C)_mae": 3.3387333333333338,
+      "relative_humidity_2m_mean (%)_mae": 3.9806666666666666,
+      "precipitation_sum (mm)_mae": 4.8658,
+      "wind_gusts_10m_max (km/h)_mae": 8.322466666666667
+    },
+    {
+      "barangay": "Pagkakaisa (Pob.)",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 70.83333333333334,
+      "temperature_2m_mean (°C)_mae": 0.28459999999999996,
+      "relative_humidity_2m_mean (%)_mae": 0.026,
+      "precipitation_sum (mm)_mae": 0.0,
+      "wind_gusts_10m_max (km/h)_mae": 0.0
+    },
+    {
+      "barangay": "Princesa (Pob.)",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 70.9952380952381,
+      "temperature_2m_mean (°C)_mae": 0.22139999999999993,
+      "relative_humidity_2m_mean (%)_mae": 0.018666666666666668,
+      "precipitation_sum (mm)_mae": 0.0,
+      "wind_gusts_10m_max (km/h)_mae": 0.0
+    },
+    {
+      "barangay": "Salvacion",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 7.6190476190476195,
+      "temperature_2m_mean (°C)_mae": 0.30613333333333326,
+      "relative_humidity_2m_mean (%)_mae": 1.9833333333333334,
+      "precipitation_sum (mm)_mae": 4.6072,
+      "wind_gusts_10m_max (km/h)_mae": 8.716199999999999
+    },
+    {
+      "barangay": "San Jose",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 8.338095238095237,
+      "temperature_2m_mean (°C)_mae": 0.23953333333333335,
+      "relative_humidity_2m_mean (%)_mae": 2.1033333333333335,
+      "precipitation_sum (mm)_mae": 4.3894,
+      "wind_gusts_10m_max (km/h)_mae": 4.988133333333333
+    },
+    {
+      "barangay": "San Manuel",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 8.338095238095237,
+      "temperature_2m_mean (°C)_mae": 0.23953333333333335,
+      "relative_humidity_2m_mean (%)_mae": 2.1033333333333335,
+      "precipitation_sum (mm)_mae": 4.3894,
+      "wind_gusts_10m_max (km/h)_mae": 4.988133333333333
+    },
+    {
+      "barangay": "San Miguel",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 71.0047619047619,
+      "temperature_2m_mean (°C)_mae": 0.20659999999999992,
+      "relative_humidity_2m_mean (%)_mae": 0.018,
+      "precipitation_sum (mm)_mae": 0.0,
+      "wind_gusts_10m_max (km/h)_mae": 0.0
+    },
+    {
+      "barangay": "San Pedro",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 71.0047619047619,
+      "temperature_2m_mean (°C)_mae": 0.20659999999999992,
+      "relative_humidity_2m_mean (%)_mae": 0.018,
+      "precipitation_sum (mm)_mae": 0.0,
+      "wind_gusts_10m_max (km/h)_mae": 0.0
+    },
+    {
+      "barangay": "San Rafael",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 4.076190476190476,
+      "temperature_2m_mean (°C)_mae": 4.021133333333334,
+      "relative_humidity_2m_mean (%)_mae": 4.144666666666667,
+      "precipitation_sum (mm)_mae": 5.122466666666667,
+      "wind_gusts_10m_max (km/h)_mae": 7.637
+    },
+    {
+      "barangay": "Santa Cruz",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 7.6190476190476195,
+      "temperature_2m_mean (°C)_mae": 0.30613333333333326,
+      "relative_humidity_2m_mean (%)_mae": 1.9833333333333334,
+      "precipitation_sum (mm)_mae": 4.6072,
+      "wind_gusts_10m_max (km/h)_mae": 8.716199999999999
+    },
+    {
+      "barangay": "Santa Lourdes",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 7.652380952380952,
+      "temperature_2m_mean (°C)_mae": 0.5124666666666667,
+      "relative_humidity_2m_mean (%)_mae": 1.744,
+      "precipitation_sum (mm)_mae": 4.3802,
+      "wind_gusts_10m_max (km/h)_mae": 6.5124
+    },
+    {
+      "barangay": "Santa Lucia (Pob.)",
+      "days_all_14_match_ppc": 1500,
+      "all_feature_values_match_percent": 100.0,
+      "temperature_2m_mean (°C)_mae": 0.0,
+      "relative_humidity_2m_mean (%)_mae": 0.0,
+      "precipitation_sum (mm)_mae": 0.0,
+      "wind_gusts_10m_max (km/h)_mae": 0.0
+    },
+    {
+      "barangay": "Santa Monica",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 8.428571428571429,
+      "temperature_2m_mean (°C)_mae": 0.2303333333333333,
+      "relative_humidity_2m_mean (%)_mae": 2.0973333333333333,
+      "precipitation_sum (mm)_mae": 4.3894,
+      "wind_gusts_10m_max (km/h)_mae": 4.988133333333333
+    },
+    {
+      "barangay": "Seaside (Pob.)",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 70.85238095238095,
+      "temperature_2m_mean (°C)_mae": 0.2783333333333333,
+      "relative_humidity_2m_mean (%)_mae": 0.024666666666666667,
+      "precipitation_sum (mm)_mae": 0.0,
+      "wind_gusts_10m_max (km/h)_mae": 0.0
+    },
+    {
+      "barangay": "Sicsican",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 8.438095238095238,
+      "temperature_2m_mean (°C)_mae": 0.23206666666666664,
+      "relative_humidity_2m_mean (%)_mae": 2.102,
+      "precipitation_sum (mm)_mae": 4.3894,
+      "wind_gusts_10m_max (km/h)_mae": 4.988133333333333
+    },
+    {
+      "barangay": "Tagburos",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 7.880952380952381,
+      "temperature_2m_mean (°C)_mae": 0.36433333333333334,
+      "relative_humidity_2m_mean (%)_mae": 1.7593333333333334,
+      "precipitation_sum (mm)_mae": 4.3802,
+      "wind_gusts_10m_max (km/h)_mae": 6.5124
+    },
+    {
+      "barangay": "Tagumpay (Pob.)",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 70.9952380952381,
+      "temperature_2m_mean (°C)_mae": 0.22139999999999993,
+      "relative_humidity_2m_mean (%)_mae": 0.018666666666666668,
+      "precipitation_sum (mm)_mae": 0.0,
+      "wind_gusts_10m_max (km/h)_mae": 0.0
+    },
+    {
+      "barangay": "Tanabag",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 4.257142857142857,
+      "temperature_2m_mean (°C)_mae": 2.4916,
+      "relative_humidity_2m_mean (%)_mae": 4.205333333333333,
+      "precipitation_sum (mm)_mae": 5.122466666666667,
+      "wind_gusts_10m_max (km/h)_mae": 7.637
+    },
+    {
+      "barangay": "Tanglaw (Pob.)",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 71.14285714285714,
+      "temperature_2m_mean (°C)_mae": 0.14146666666666663,
+      "relative_humidity_2m_mean (%)_mae": 0.014,
+      "precipitation_sum (mm)_mae": 0.0,
+      "wind_gusts_10m_max (km/h)_mae": 0.0
+    },
+    {
+      "barangay": "Tiniguiban",
+      "days_all_14_match_ppc": 0,
+      "all_feature_values_match_percent": 8.30952380952381,
+      "temperature_2m_mean (°C)_mae": 0.23693333333333333,
+      "relative_humidity_2m_mean (%)_mae": 2.104,
+      "precipitation_sum (mm)_mae": 4.3894,
+      "wind_gusts_10m_max (km/h)_mae": 4.988133333333333
+    }
+  ],
+  "largest_daily_spatial_difference_examples": {
+    "precipitation_sum (mm)": {
+      "date": "2025-02-09",
+      "ppc": 115.9,
+      "lowest_barangay": "Bahile",
+      "lowest": 3.4,
+      "highest_barangay": "Bagong Pag-Asa (Pob.)",
+      "highest": 115.9
+    },
+    "wind_gusts_10m_max (km/h)": {
+      "date": "2025-07-17",
+      "ppc": 20.5,
+      "lowest_barangay": "Bagong Pag-Asa (Pob.)",
+      "lowest": 20.5,
+      "highest_barangay": "Napsan",
+      "highest": 73.8
+    },
+    "temperature_2m_mean (°C)": {
+      "date": "2026-08-26",
+      "ppc": 27.3,
+      "lowest_barangay": "Binduyan",
+      "lowest": 20.9,
+      "highest_barangay": "Cabayugan",
+      "highest": 28.6
+    }
+  },
+  "yearly": {
+    "2022": {
+      "days": 122,
+      "exact_values_percent": 41.22385528547202,
+      "precipitation_sum (mm)_mae": 2.809553420011306,
+      "temperature_2m_mean (°C)_mae": 0.5372244205765969,
+      "wind_gusts_10m_max (km/h)_mae": 3.66131995477671
+    },
+    "2023": {
+      "days": 365,
+      "exact_values_percent": 41.415412645927525,
+      "precipitation_sum (mm)_mae": 2.326995748700992,
+      "temperature_2m_mean (°C)_mae": 0.5605384978743505,
+      "wind_gusts_10m_max (km/h)_mae": 3.4329995276334437
+    },
+    "2024": {
+      "days": 366,
+      "exact_values_percent": 41.420361247947454,
+      "precipitation_sum (mm)_mae": 1.8766016581872997,
+      "temperature_2m_mean (°C)_mae": 0.5644055021669493,
+      "wind_gusts_10m_max (km/h)_mae": 3.3684284906726965
+    },
+    "2025": {
+      "days": 365,
+      "exact_values_percent": 41.63776233214117,
+      "precipitation_sum (mm)_mae": 2.9944260746339157,
+      "temperature_2m_mean (°C)_mae": 0.5648606518658478,
+      "wind_gusts_10m_max (km/h)_mae": 3.218837978271138
+    },
+    "2026": {
+      "days": 282,
+      "exact_values_percent": 41.47495021486217,
+      "precipitation_sum (mm)_mae": 1.687606994375153,
+      "temperature_2m_mean (°C)_mae": 0.622682807532404,
+      "wind_gusts_10m_max (km/h)_mae": 3.3690083149914405
+    }
+  },
+  "precipitation_equals_rain_new": true,
+  "precipitation_equals_rain_original": true,
+  "source_sha256": {
+    "E:\\PALECO\\final\\weather_data\\barangay_daily_weather.csv": "1c6cfcc698235daaef589f9a692bd8b276cd8a899de30bb9e20ebfe8561be223",
+    "E:\\PALECO\\final\\daily_weather_data.csv": "a63d920dc1e31b8e20894dd1bcdf466352ebc3323d36935eca15cb990cab5db6"
+  }
+}

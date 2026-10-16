@@ -1,0 +1,30 @@
+{
+  "status": "completed",
+  "title": "Build recloser features and freeze chronological cohorts",
+  "started_utc": "2026-10-16T01:29:07.503620+00:00",
+  "finished_utc": "2026-10-16T01:29:41.038025+00:00",
+  "elapsed_seconds": 33.534,
+  "detail": {
+    "panel_rows": 13473,
+    "positives": 418,
+    "families": {
+      "history": 9,
+      "full": 37,
+      "rainfall": 22,
+      "wind": 14,
+      "temperature_humidity": 11,
+      "vegetation": 13,
+      "all_weather": 30,
+      "full_local": 39,
+      "full_dry": 39,
+      "full_local_dry": 41,
+      "legacy_full": 88
+    },
+    "frozen_procedures": 27,
+    "monthly_procedures": 23,
+    "primary_test_rows": 2098,
+    "primary_positives": 57,
+    "sensitivity_rows": 2376,
+    "uncertainty_mask_is_retrospective": true
+  }
+}

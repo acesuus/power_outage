@@ -1,0 +1,28 @@
+{
+  "parameters": {
+    "depth": 2,
+    "l2": 30
+  },
+  "trees": 165,
+  "tune_metrics": {
+    "rows": 616,
+    "positives": 21,
+    "prevalence": 0.03409090909090909,
+    "average_precision": 0.12352277028586943,
+    "brier_score": 0.03260135762497519,
+    "log_loss": 0.14487928799204153,
+    "roc_auc": 0.6326530612244898,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "accuracy": 0.9659090909090909,
+    "tn": 595,
+    "fp": 0,
+    "fn": 21,
+    "tp": 0,
+    "specificity": 1.0,
+    "false_positive_rate": 0.0,
+    "balanced_accuracy": 0.5,
+    "warnings": 0
+  }
+}

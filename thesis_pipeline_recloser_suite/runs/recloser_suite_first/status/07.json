@@ -1,0 +1,15 @@
+{
+  "status": "completed",
+  "title": "Evaluate frozen models, sensitivity and paired comparisons",
+  "started_utc": "2026-10-16T02:21:56.146397+00:00",
+  "finished_utc": "2026-10-16T02:29:10.043471+00:00",
+  "elapsed_seconds": 433.897,
+  "detail": {
+    "frozen_warning_comparisons": 270,
+    "monthly_warning_comparisons": 230,
+    "primary_rows": 2098,
+    "positives": 57,
+    "sensitivity_rows": 2376,
+    "original_reference_procedures": 20
+  }
+}

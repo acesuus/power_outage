@@ -1,0 +1,32 @@
+{
+  "candidate_inputs": 88,
+  "family_counts": {
+    "history_calendar": 29,
+    "history_weather": 77,
+    "full": 88
+  },
+  "mapping_barangays_per_recloser": {
+    "BUNCAG": 5,
+    "CHARIOT": 2,
+    "FACTOR": 3,
+    "KALIKASAN": 2,
+    "LACSAMANA": 2,
+    "MENDOZA": 4,
+    "PENRO": 2,
+    "PILTEL": 11,
+    "SAN MANUEL": 2
+  },
+  "unique_mapped_barangays": 24,
+  "mapping_incident_end": "2024-06-16",
+  "mapping_publication_asof": "2024-06-30T23:59:59+08:00",
+  "weather_days_with_identical_rain_for_all_reclosers": 30,
+  "weather_days": 1501,
+  "median_distinct_recloser_rain_values_per_day": 5.0,
+  "vegetation_missing_fraction": {
+    "veg_buffer_5m": 0.06286647368811697,
+    "veg_buffer_15m": 0.06286647368811697,
+    "veg_buffer_30m": 0.055963779410673195
+  },
+  "official_service_area_mapping": false,
+  "future_test_posts_used_for_mapping": false
+}

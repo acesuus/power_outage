@@ -1,0 +1,82 @@
+{
+  "calibrator": {
+    "method": "nondecreasing logit-sigmoid",
+    "slope": 0.7186948578274044,
+    "intercept": -1.7974213430187733,
+    "slope_penalty_towards_identity": 0.001,
+    "rank_reversal_allowed": false,
+    "constant_if_zero_slope": false
+  },
+  "warnings": {
+    "raw": {
+      "balanced_accuracy": {
+        "threshold": 0.03406647965312004,
+        "policy": "balanced_accuracy",
+        "validation_objective": 0.634527687296417,
+        "validation_recall": 0.8,
+        "validation_fpr": 0.5309446254071661,
+        "fpr_limit": null
+      },
+      "fpr20": {
+        "threshold": 0.048461347818374634,
+        "policy": "fpr20",
+        "validation_objective": 0.2,
+        "validation_recall": 0.2,
+        "validation_fpr": 0.19218241042345277,
+        "fpr_limit": 0.2
+      },
+      "fpr10": {
+        "threshold": 0.07029596716165543,
+        "policy": "fpr10",
+        "validation_objective": 0.1,
+        "validation_recall": 0.1,
+        "validation_fpr": 0.0732899022801303,
+        "fpr_limit": 0.1
+      },
+      "f1": {
+        "threshold": 0.03901045769453049,
+        "policy": "f1"
+      },
+      "fixed050": {
+        "threshold": 0.5,
+        "policy": "fixed050",
+        "fitted": false
+      }
+    },
+    "monotone_sigmoid": {
+      "balanced_accuracy": {
+        "threshold": 0.014755145423214041,
+        "policy": "balanced_accuracy",
+        "validation_objective": 0.634527687296417,
+        "validation_recall": 0.8,
+        "validation_fpr": 0.5309446254071661,
+        "fpr_limit": null
+      },
+      "fpr20": {
+        "threshold": 0.01912963790343335,
+        "policy": "fpr20",
+        "validation_objective": 0.2,
+        "validation_recall": 0.2,
+        "validation_fpr": 0.19218241042345277,
+        "fpr_limit": 0.2
+      },
+      "fpr10": {
+        "threshold": 0.025253797117634404,
+        "policy": "fpr10",
+        "validation_objective": 0.1,
+        "validation_recall": 0.1,
+        "validation_fpr": 0.0732899022801303,
+        "fpr_limit": 0.1
+      },
+      "f1": {
+        "threshold": 0.016299038882488362,
+        "policy": "f1"
+      },
+      "fixed050": {
+        "threshold": 0.5,
+        "policy": "fixed050",
+        "fitted": false
+      }
+    }
+  }
+}

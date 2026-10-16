@@ -1,0 +1,14 @@
+{
+  "source_files_and_evaluation_model_hashes_verified": 36,
+  "source_evaluation_model_bundles": 27,
+  "aggregate_results_independently_recomputed": 30,
+  "monthly_confusion_matrices_independently_recomputed": 270,
+  "monthly_counts_reconcile_with_overall": true,
+  "raw_and_intercept_adjusted_learned_warning_decisions_identical": true,
+  "earlier_completed_suite_verification": "analysis/recloser_suite_first/numerical_review.json",
+  "original_artifacts_unchanged": true,
+  "new_model_fits": 0,
+  "new_threshold_searches": 0,
+  "selected_a_new_main_model": false,
+  "independent_test": false
+}

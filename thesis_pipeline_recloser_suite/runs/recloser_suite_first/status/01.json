@@ -1,0 +1,13 @@
+{
+  "status": "completed",
+  "title": "Audit and preserve original data and experiments",
+  "started_utc": "2026-10-16T01:26:12.582908+00:00",
+  "finished_utc": "2026-10-16T01:29:02.611658+00:00",
+  "elapsed_seconds": 170.028,
+  "detail": {
+    "preserved_artifacts": 6231,
+    "source_posts": 1369,
+    "labels_changed": false,
+    "new_downloads": false
+  }
+}
