@@ -27,6 +27,10 @@ Use a new output filename. Supply the 66 prepared features and provenance column
 
 Future rows require an operator-attested notice snapshot collected within 24 hours before the issue cutoff, current forecast inputs, and supported recloser names from `model_manifest.json`. This package scores prepared features and does not retrieve or construct raw-source inputs. `example_input.csv` is historical and covers the three risk labels.
 
+## Thesis report
+
+[Complete thesis report](documentation/THESIS_REPORT.md) contains all result tables, calibration reports, the full feature dictionary, full-precision results, and package verification in one Markdown file.
+
 ## Files
 
 - `model.joblib`: fitted classifiers, preprocessing, calibration, and risk cutoffs.
