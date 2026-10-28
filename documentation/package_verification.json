@@ -1,0 +1,17 @@
+{
+  "isolated_python": true,
+  "records_replayed": 3682,
+  "all_risk_labels_match": true,
+  "max_percentage_difference": 0.0,
+  "precision": 0.7008547008547008,
+  "recall": 0.803921568627451,
+  "TP": 82,
+  "FP": 35,
+  "FN": 20,
+  "TN": 3545,
+  "project_modules_loaded": {
+    "forecast_model": "E:\\PALECO\\final\\day_ahead_outage_forecast_final\\forecast_model.py"
+  },
+  "dashboard_files": 0,
+  "model_sha256": "aaa3aaccb37a945759980639343e9994868354a42875e1e1021c62a9d78adb78"
+}

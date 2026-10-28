@@ -1,2 +1,0 @@
-approach,protocol,window,mode,policy,model_id,rows,positives,auc_roc,f1_score,precision,recall,brier_score,tn,fp,fn,tp,warnings,precision_defined,calibration_ece_10_quantile
-Frozen expanding,frozen,all,raw,fpr20,xgboost__history__all__raw,2098,57,0.6305044826667354,0.07091055600322321,0.037162162162162164,0.7719298245614035,0.026596895466318014,901,1140,13,44,1184,True,0.01913539889500298

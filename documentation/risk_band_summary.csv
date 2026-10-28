@@ -1,0 +1,4 @@
+risk_level,rows,outages,non_outages,mean_estimate_percent,observed_percent,unique_percentages
+Low,3490,17,3473,0.6223517251859714,0.4871060171919771,3490
+Medium,75,3,72,8.984964996226545,4.0,75
+High,117,82,35,62.8557277306579,70.08547008547008,117

@@ -1,7 +1,0 @@
-{
-  "status": "passed",
-  "fresh_frozen_fits": 5,
-  "selected_parameters_and_trial_metrics_match_archive": true,
-  "final_max_probability_difference": 0.0,
-  "evaluation_rows": 2098
-}

@@ -1,0 +1,56 @@
+{
+  "model_name": "Day-Ahead Outage Forecast",
+  "model_version": "1.0",
+  "frozen_artifact": true,
+  "model_sha256": "aaa3aaccb37a945759980639343e9994868354a42875e1e1021c62a9d78adb78",
+  "feature_count": 66,
+  "supported_reclosers": [
+    "ANILAWAN",
+    "BALTAN",
+    "BINUAN",
+    "BUNCAG",
+    "CHARIOT",
+    "FACTOR",
+    "KALIKASAN",
+    "LACSAMANA",
+    "MACASAET",
+    "MAGARWAK",
+    "MANALO",
+    "MENDOZA",
+    "MONTIBLE",
+    "PENRO",
+    "PILTEL",
+    "RESUMA",
+    "SALVACION",
+    "SAN MANUEL",
+    "SOLID",
+    "SOLOMON",
+    "STA. MONICA"
+  ],
+  "high_min_percent": 15.087275438014059,
+  "medium_min_percent": 6.015708528810924,
+  "calibration": {
+    "method": "beta",
+    "a": 1.4727499499091128,
+    "b": 0.98676589952847,
+    "intercept": 10.211138870943625,
+    "slope_penalty": 1.0
+  },
+  "component_weights": {
+    "forest_a": 0.59985,
+    "forest_b": 0.39990000000000003,
+    "logistic": 0.00025
+  },
+  "prediction_cutoff": "D-1 20:00 Asia/Manila",
+  "forecast_horizon": "Next local calendar day",
+  "software": {
+    "python": "3.13.15",
+    "numpy": "2.3.2",
+    "pandas": "2.3.2",
+    "scipy": "1.16.1",
+    "scikit-learn": "1.7.1",
+    "joblib": "1.5.1",
+    "xgboost": "3.4.1",
+    "matplotlib": "3.10.6"
+  }
+}

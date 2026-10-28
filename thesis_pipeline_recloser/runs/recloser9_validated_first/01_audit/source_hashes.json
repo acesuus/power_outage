@@ -1,9 +1,0 @@
-{
-  "paleco_unscheduled_puerto_princesa_city_only.csv": "426dc95d52ad985ae1e949e07bd536446c38dac021134d4cc89832fb86dedccf",
-  "weather_data/barangay_daily_weather.csv": "1c6cfcc698235daaef589f9a692bd8b276cd8a899de30bb9e20ebfe8561be223",
-  "vegetation_features_monthly.csv": "9157516ed141e250d1fbfcf653f8f70064a5e4e2f066f010d88d4134e35cd850",
-  "weather_data/barangay_name_mapping.csv": "888625771cea7f68a60d74a01a6fe8ad397cd76d923fa943ef4dedae243d8392",
-  "equipment_analysis/all_row_equipment_flags.csv": "6a64030b69e697ecf0a16c47bd21935d2dfa1e6310ef9b49b17ea312d830ed10",
-  "thesis_pipeline_v3/data/rainfall/barangay_rainfall_daily.csv": "831aedf00e848d69d89678609bde22d01739fe98911fc268e20ea84ff314aa0e",
-  "thesis_pipeline_v3/data/rainfall/download_manifest.json": "f71deec92a75f2d31492462c3e24256f362b1d29d4a97b1868bdcc524e5dbb60"
-}

@@ -1,0 +1,180 @@
+{
+  "feature_count": 66,
+  "features": [
+    "forecast_precipitation_mm",
+    "forecast_temperature_max_c",
+    "forecast_temperature_min_c",
+    "forecast_temperature_mean_c",
+    "forecast_humidity_mean_pct",
+    "forecast_wind_speed_max_kmh",
+    "forecast_wind_speed_mean_kmh",
+    "forecast_wind_gust_max_kmh",
+    "forecast_wind_direction_sin",
+    "forecast_wind_direction_cos",
+    "forecast_weather_code",
+    "forecast_apparent_temperature_max_c",
+    "forecast_humidity_max_pct",
+    "forecast_humidity_min_pct",
+    "forecast_precipitation_lag1d_mm",
+    "forecast_wind_gust_max_lag1d_kmh",
+    "forecast_temperature_mean_lag1d_c",
+    "forecast_humidity_mean_lag1d_pct",
+    "forecast_precipitation_sum_prev3d_mm",
+    "forecast_wind_gust_max_prev3d_kmh",
+    "forecast_temperature_mean_prev3d_c",
+    "forecast_humidity_mean_prev3d_pct",
+    "forecast_precipitation_sum_prev7d_mm",
+    "forecast_wind_gust_max_prev7d_kmh",
+    "forecast_temperature_mean_prev7d_c",
+    "forecast_humidity_mean_prev7d_pct",
+    "veg_buffer_5m",
+    "veg_buffer_15m",
+    "veg_buffer_30m",
+    "ndvi_p90",
+    "ndvi_mean_brgy",
+    "valid_frac_b30",
+    "outage_days_prev3d",
+    "outage_days_prev7d",
+    "days_since_last_outage_capped7",
+    "no_outage_prev7d",
+    "outage_days_prev30d",
+    "outage_days_prev90d",
+    "days_since_last_known_outage",
+    "network_outage_unit_days_prev7d",
+    "equipment_fault_days_prev7d",
+    "equipment_fault_days_prev14d",
+    "repair_notice_days_prev7d",
+    "repair_notice_days_prev14d",
+    "line_damage_days_prev7d",
+    "line_damage_days_prev14d",
+    "jumper_fault_days_prev7d",
+    "jumper_fault_days_prev14d",
+    "transformer_fault_days_prev7d",
+    "transformer_fault_days_prev14d",
+    "pole_crossarm_fault_days_prev7d",
+    "pole_crossarm_fault_days_prev14d",
+    "day_of_week",
+    "is_weekend",
+    "day_of_year_sin",
+    "day_of_year_cos",
+    "month_sin",
+    "month_cos",
+    "recloser",
+    "forecast_wet_days_prev3d",
+    "forecast_wet_days_prev7d",
+    "forecast_consecutive_wet_days_capped7",
+    "forecast_precipitation_vs_fit_p90",
+    "forecast_gust_vs_fit_p90",
+    "forecast_gust_x_veg5m",
+    "forecast_precipitation_x_veg5m"
+  ],
+  "metadata": [
+    "date",
+    "recloser",
+    "panel_id",
+    "prediction_cutoff_local",
+    "forecast_assumed_available_at_local",
+    "history_snapshot_as_of_local",
+    "history_snapshot_mode",
+    "latest_history_publication_local",
+    "vegetation_month"
+  ],
+  "groups": {
+    "target_day_forecast_weather": [
+      "forecast_precipitation_mm",
+      "forecast_temperature_max_c",
+      "forecast_temperature_min_c",
+      "forecast_temperature_mean_c",
+      "forecast_humidity_mean_pct",
+      "forecast_wind_speed_max_kmh",
+      "forecast_wind_speed_mean_kmh",
+      "forecast_wind_gust_max_kmh",
+      "forecast_wind_direction_sin",
+      "forecast_wind_direction_cos",
+      "forecast_weather_code",
+      "forecast_apparent_temperature_max_c",
+      "forecast_humidity_max_pct",
+      "forecast_humidity_min_pct"
+    ],
+    "lagged_forecast_weather": [
+      "forecast_precipitation_lag1d_mm",
+      "forecast_wind_gust_max_lag1d_kmh",
+      "forecast_temperature_mean_lag1d_c",
+      "forecast_humidity_mean_lag1d_pct",
+      "forecast_precipitation_sum_prev3d_mm",
+      "forecast_wind_gust_max_prev3d_kmh",
+      "forecast_temperature_mean_prev3d_c",
+      "forecast_humidity_mean_prev3d_pct",
+      "forecast_precipitation_sum_prev7d_mm",
+      "forecast_wind_gust_max_prev7d_kmh",
+      "forecast_temperature_mean_prev7d_c",
+      "forecast_humidity_mean_prev7d_pct"
+    ],
+    "vegetation": [
+      "veg_buffer_5m",
+      "veg_buffer_15m",
+      "veg_buffer_30m",
+      "ndvi_p90",
+      "ndvi_mean_brgy",
+      "valid_frac_b30"
+    ],
+    "outage_history": [
+      "outage_days_prev3d",
+      "outage_days_prev7d",
+      "days_since_last_outage_capped7",
+      "no_outage_prev7d",
+      "outage_days_prev30d",
+      "outage_days_prev90d",
+      "days_since_last_known_outage",
+      "network_outage_unit_days_prev7d"
+    ],
+    "equipment_history": [
+      "equipment_fault_days_prev7d",
+      "equipment_fault_days_prev14d"
+    ],
+    "repair_history": [
+      "repair_notice_days_prev7d",
+      "repair_notice_days_prev14d"
+    ],
+    "equipment_category_history": [
+      "line_damage_days_prev7d",
+      "line_damage_days_prev14d",
+      "jumper_fault_days_prev7d",
+      "jumper_fault_days_prev14d",
+      "transformer_fault_days_prev7d",
+      "transformer_fault_days_prev14d",
+      "pole_crossarm_fault_days_prev7d",
+      "pole_crossarm_fault_days_prev14d"
+    ],
+    "calendar": [
+      "day_of_week",
+      "is_weekend",
+      "day_of_year_sin",
+      "day_of_year_cos",
+      "month_sin",
+      "month_cos"
+    ],
+    "identity": [
+      "recloser"
+    ],
+    "wet_weather_history": [
+      "forecast_wet_days_prev3d",
+      "forecast_wet_days_prev7d",
+      "forecast_consecutive_wet_days_capped7"
+    ],
+    "weather_stress": [
+      "forecast_precipitation_vs_fit_p90",
+      "forecast_gust_vs_fit_p90"
+    ],
+    "weather_vegetation_interactions": [
+      "forecast_gust_x_veg5m",
+      "forecast_precipitation_x_veg5m"
+    ]
+  },
+  "prediction_cutoff": "D-1 20:00 Asia/Manila",
+  "forecast_horizon": "Next local calendar day",
+  "forecast_reference_values": {
+    "precipitation_p90_mm": 15.960000000000015,
+    "gust_p90_kmh": 30.2
+  }
+}

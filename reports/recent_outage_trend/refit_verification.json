@@ -1,7 +1,0 @@
-{
-  "status": "passed",
-  "fresh_model_fits": 5,
-  "selected_trials_match": true,
-  "probabilities_and_warnings_match": true,
-  "maximum_probability_difference": 0.0
-}
